@@ -1,0 +1,21 @@
+48000	// Sample Rate
+
+1	// NoiseGate  isActive
+1	// Expander   isActive
+1	// Compressor isActive
+1	// Limiter    isActive
+
+-70	// NoiseGate  threshold
+-7	// Expander   threshold
+-5	// Compressor threshold
+-4.0	// Limiter    threshold
+
+0.65	// Expander   ratio
+2	// Compressor ratio
+
+0.0001	// Envelope   attack  time
+50	// Envelope   release time
+1	// Expander   attack  time
+1	// Expander   release time
+1	// Compressor attack  time
+1	// Compressor release time

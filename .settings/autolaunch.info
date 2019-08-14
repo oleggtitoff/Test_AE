@@ -1,0 +1,8 @@
+#
+#Wed Aug 14 13:42:24 EEST 2019
+com.tensilica.xide.cdtcommandlist=
+org.eclipse.cdt.launch.WORKING_DIRECTORY=
+com.tensilica.xide.cdtrunscriptafterload=false
+com.tensilica.xide.cdt.launch.attachingdo=resume and stop in main
+org.eclipse.cdt.launch.PROGRAM_ARGUMENTS=-c Config.txt -i DiffAmplitudeTest.wav -o Output.wav
+com.tensilica.xide.cdt.launch.attachingdo.stop.at.symbol=main
