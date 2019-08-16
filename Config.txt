@@ -1,21 +1,63 @@
 48000	// Sample Rate
 
-1	// NoiseGate  isActive
-1	// Expander   isActive
-1	// Compressor isActive
-1	// Limiter    isActive
+1	// NoiseGate  isActive   (0, or 1)
+1	// Expander   isActive   (0, or 1)
+1	// Compressor isActive   (0, or 1)
+1	// Limiter    isActive   (0, or 1)
 
--70	// NoiseGate  threshold
--7	// Expander   threshold
--5	// Compressor threshold
--4.0	// Limiter    threshold
+-70	// NoiseGate  threshold   (-70 dB, or less)
+-7	// Expander   threshold   (high threshold in dB)
+-5	// Compressor threshold   (low threshold in dB)
+-4.0	// Limiter    threshold   (in dB)
 
-0.65	// Expander   ratio
-2	// Compressor ratio
+0.65	// Expander   ratio   (range: 0.5 - 16)
+2	// Compressor ratio   (range: 0.5 - 16)
 
-0.0001	// Envelope   attack  time
-50	// Envelope   release time
-1	// Expander   attack  time
-1	// Expander   release time
-1	// Compressor attack  time
-1	// Compressor release time
+0.0001	// Envelope   attack  time   (in ms)
+50	// Envelope   release time   (in ms)
+1	// Expander   attack  time   (in ms)
+1	// Expander   release time   (in ms)
+1	// Compressor attack  time   (in ms)
+1	// Compressor release time   (in ms)
+
+
+////// README //////
+//
+// To run application specify this command line arguments:
+// 	-c configFileName.txt - this config file
+// 	-i inputFileName.wav  - input audio file
+// 	-o outputFileName.wav - output audio file
+//
+// In config file: 
+// 	Follow the order of the arguments.
+// 	To write a comment start with '//' (in each line).
+// 	Spaces are ignored.
+//
+// "Sample Rate" is sample rate of your input and output files.
+// "isActive" flag turns module on (if 1) and off (if 0).
+//
+// If multiple modules are enabled at the same time:
+// 	The minimum gain will be taken between Compressor, Expander 
+// 	   and NoiseGate and applied to input signal.
+// 	Than limiter works.
+//
+// "Threshold" restricts the amplitude range affected by the module:
+// 	For NoiseGate: 
+//		You specify the upper threshold, 
+//		if it is bigger than -70 dB, it will be -70 dB.
+// 	For Expander:
+//		You specify the upper threshold.
+//	For Compressor:
+//		You specify the lower threshold.
+//	For Limiter:
+//		You specify the lower threshold.
+//
+// "Ratio" for both Compressor and Expander:
+// 	If ratio is smaller than one, module expands a signal.
+// 	If ratio is bigger than one, module compress a signal.
+//
+// "Attack" and "Release" time is specified separately for the 
+//    envelope of input signal used by modules (except the limiter)
+//    as an amplitude value and for the Compressors and the Expanders
+//    gain.
+//

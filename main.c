@@ -28,7 +28,7 @@ typedef struct {
 
 ALWAYS_INLINE Status initFileNames(FileNames *fileNames);
 ALWAYS_INLINE Status runGetOpt(int argc, char *const argv[], const char *optstring, FileNames *fileNames);
-Status readConfig(FILE *configFilePtr, Params *params, Coeffs *coeffs, States *states);
+ALWAYS_INLINE Status readConfig(FILE *configFilePtr, Params *params, Coeffs *coeffs, States *states);
 void runAmplitudeProc(FILE *inputFilePtr, FILE *outputFilePtr, RingBuff *ringBuff,
 		 	 	 	  const Coeffs *coeffs, States *states);
 
@@ -109,7 +109,7 @@ ALWAYS_INLINE Status runGetOpt(int argc, char *const argv[], const char *optstri
 	return statusOK;
 }
 
-void parseConfigString(char *str)
+ALWAYS_INLINE void parseConfigString(char *str)
 {
 	uint8_t inputIndex = 0;
 	uint8_t paramIndex = 0;
@@ -136,7 +136,7 @@ void parseConfigString(char *str)
 	strcpy(str, paramStr);
 }
 
-Status readConfig(FILE *configFilePtr, Params *params, Coeffs *coeffs, States *states)
+ALWAYS_INLINE Status readConfig(FILE *configFilePtr, Params *params, Coeffs *coeffs, States *states)
 {
 	if (!params || !coeffs || !states)
 		return statusError;

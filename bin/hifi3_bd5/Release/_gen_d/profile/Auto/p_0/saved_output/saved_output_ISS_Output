@@ -1,0 +1,18 @@
+C:\usr\xtensa\XtDevTools\install\tools\RI-2019.1-win32\XtensaTools\bin\xt-run --xtensa-core=hifi3_bd5 --xtensa-system=C:\usr\xtensa\XtDevTools\install\builds\RI-2019.1-win32\hifi3_bd5\config --xtensa-params= --console --turbo --summary --client=C:\usr\xtensa\Xplorer-8.0.10-workspaces\workspace\Test_AE\bin\hifi3_bd5\Release\_gen_d\profile\Auto\p_0\iss.clientcmds C:\usr\xtensa\Xplorer-8.0.10-workspaces\workspace\Test_AE\bin\hifi3_bd5\Release\Test_AE -c Config.txt -i DiffAmplitudeTest.wav -o Output.wav
+
+Xtensa Core: "hifi3_bd5"  TurboXim Version: 14.01
+
+Time for Simulation = 2.64 seconds  (+ 0.53 seconds for Initialization)
+
+Current PC = 0x60009a57
+
+Events                            Number  Number
+                                          per 100
+                                          instrs 
+
+Committed instructions          9699377 ( 100.00 )
+Taken branches                   413813 (   4.27 )
+Exceptions                         2001 (   0.02 )
+   WindowOverflow                  1001 (   0.01 )
+   WindowUnderflow                 1000 (   0.01 )
+

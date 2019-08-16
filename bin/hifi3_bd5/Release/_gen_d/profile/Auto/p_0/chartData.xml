@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<chartData>
+<totals>
+<data category="profile" name="Application Size" value="8785.0">
+<subData name="Text Size" value="6578.0"/>
+<subData name="Read-Only Data Size" value="2031.0"/>
+<subData name="Initialized Data Size" value="0.0"/>
+<subData name="Uninitialized Data Size" value="0.0"/>
+<subData name="Literals Size" value="176.0"/>
+</data>
+<data category="profile" name="Instructions" value="9699377.0"/>
+</totals>
+<additionalInfo/>
+</chartData>
