@@ -1,39 +1,134 @@
-48000	// Sample Rate
-
-1	// NoiseGate  isActive   (0, or 1)
-1	// Expander   isActive   (0, or 1)
-1	// Compressor isActive   (0, or 1)
-1	// Limiter    isActive   (0, or 1)
-
--70	// NoiseGate  threshold   (-70 dB, or less)
--7	// Expander   threshold   (high threshold in dB)
--5	// Compressor threshold   (low threshold in dB)
--4.0	// Limiter    threshold   (in dB)
-
-0.65	// Expander   ratio   (range: 0.5 - 16)
-2	// Compressor ratio   (range: 0.5 - 16)
-
-0.0001	// Envelope   attack  time   (in ms)
-50	// Envelope   release time   (in ms)
-1	// Expander   attack  time   (in ms)
-1	// Expander   release time   (in ms)
-1	// Compressor attack  time   (in ms)
-1	// Compressor release time   (in ms)
+00100:   0		// Bypass		 (0, or 1)
+00101:   7		// Bypass fade time	 (in ms)
 
 
+00151:   0		// Input gain  (in dB,	0, or less)
+00152:   0		// Output gain (in dB,	0, or less)
+00153:   0		// L/R balance (-10 (L max) to 10 (R max))
+
+//
+// === Config values for AmplitudeProc algorithm ===
+//
+00201:   0		// NoiseGate  isActive   (0, or 1)
+00202:   0		// Expander   isActive   (0, or 1)
+00203:   0		// Compressor isActive   (0, or 1)
+00204:   0		// Limiter    isActive   (0, or 1)
+
+00205:   -70		// NoiseGate  threshold   (-70 dB, or less)
+00206:   -7		// Expander   threshold   (high threshold in dB)
+00207:   -5		// Compressor threshold   (low threshold in dB)
+00208:   -1.0		// Limiter    threshold   (in dB)
+
+00209:   0.65		// Expander   ratio   (range: 0.5 - 16)
+00210:   2		// Compressor ratio   (range: 0.5 - 16)
+
+00211:   0.0001		// Envelope   attack  time   (in ms)
+00212:   30		// Envelope   release time   (in ms)
+00213:   1		// Expander   attack  time   (in ms)
+00214:   1		// Expander   release time   (in ms)
+00215:   1		// Compressor attack  time   (in ms)
+00216:   1		// Compressor release time   (in ms)
+
+
+//
+// === Config values for EQ algorithm ===
+//
+// Filter types:
+// lowpass   = 1,
+// highpass  = 2,
+// bandpass  = 3,
+// notch     = 4,
+// peak      = 5,
+// lowShelf  = 6,
+// highShelf = 7
+//
+00500:   0		// isEQActive		(0, or 1)
+//
+// --- BAND 1 ---
+01001:   1		// isActive		(0, or 1)
+01002:   5		// filter type		[1 - 7]
+01003:   2200		// cutoff frequency
+01004:   3.707		// Q value
+01005:   15		// peak gain
+
+// --- BAND 2 ---
+02001:   1		// isActive		(0, or 1)
+02002:   5		// filter type		[1 - 7]
+02003:   4380		// cutoff frequency
+02004:   3		// Q value
+02005:   15		// peak gain
+
+// --- BAND 3 ---
+03001:   0		// isActive		(0, or 1)
+03002:   5		// filter type		[1 - 7]
+03003:   6560		// cutoff frequency
+03004:   3		// Q value
+03005:   6		// peak gain
+
+// --- BAND 4 ---
+04001:   0		// isActive		(0, or 1)
+04002:   5		// filter type		[1 - 7]
+04003:   8740		// cutoff frequency
+04004:   3		// Q value
+04005:   2		// peak gain
+
+// --- BAND 5 ---
+05001:   0		// isActive		(0, or 1)
+05002:   5		// filter type		[1 - 7]
+05003:   10920		// cutoff frequency
+05004:   3		// Q value
+05005:   6		// peak gain
+
+// --- BAND 6 ---
+06001:   0		// isActive		(0, or 1)
+06002:   5		// filter type		[1 - 7]
+06003:   13100		// cutoff frequency
+06004:   3		// Q value
+06005:   6		// peak gain
+
+// --- BAND 7 ---
+07001:   0		// isActive		(0, or 1)
+07002:   5		// filter type		[1 - 7]
+07003:   15280		// cutoff frequency
+07004:   3		// Q value
+07005:   -6		// peak gain
+
+// --- BAND 8 ---
+08001:   0		// isActive		(0, or 1)
+08002:   5		// filter type		[1 - 7]
+08003:   17460		// cutoff frequency
+08004:   3		// Q value
+08005:   -6		// peak gain
+
+// --- BAND 9 ---
+09001:   0		// isActive		(0, or 1)
+09002:   5		// filter type		[1 - 7]
+09003:   19640		// cutoff frequency
+09004:   3		// Q value
+09005:   6		// peak gain
+
+// --- BAND 10 ---
+10001:   0		// isActive		(0, or 1)
+10002:   7		// filter type		[1 - 7]
+10003:   21820		// cutoff frequency
+10004:   0.707		// Q value
+10005:   -10		// peak gain
+
+
+//
 ////// README //////
 //
 // To run application specify this command line arguments:
 // 	-c configFileName.txt - this config file
-// 	-i inputFileName.wav  - input audio file
+// 	-i inputFileName.wav  - input audio file (stereo, 32 bit, 48000 only)
 // 	-o outputFileName.wav - output audio file
 //
 // In config file: 
-// 	Follow the order of the arguments.
+// 	Config format is: (id), (value), (comment).
+//	id ends with ":".
 // 	To write a comment start with '//' (in each line).
 // 	Spaces are ignored.
 //
-// "Sample Rate" is sample rate of your input and output files.
 // "isActive" flag turns module on (if 1) and off (if 0).
 //
 // If multiple modules are enabled at the same time:

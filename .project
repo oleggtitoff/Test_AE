@@ -39,6 +39,21 @@
 			<locationURI>PARENT-1-PROJECT_LOC/Task7_AE/AmplitudeProc.h</locationURI>
 		</link>
 		<link>
+			<name>BiquadFilter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Equalizer/BiquadFilter.h</locationURI>
+		</link>
+		<link>
+			<name>EQ.c</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Equalizer/EQ.c</locationURI>
+		</link>
+		<link>
+			<name>EQ.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Equalizer/EQ.h</locationURI>
+		</link>
+		<link>
 			<name>ExternalAndInternalTypesConverters.h</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/Task7_AE/ExternalAndInternalTypesConverters.h</locationURI>

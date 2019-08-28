@@ -8,6 +8,7 @@
                         <key>Includes</key>
                         <value flag="-I" inheritance="prepend">
                             <ListEntry>${workspace_loc:Task7_AE}</ListEntry>
+                            <ListEntry>${workspace_loc:Equalizer}</ListEntry>
                         </value>
                     </StringListMapEntry>
                 </StringListMapOptions>

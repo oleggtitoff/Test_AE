@@ -26,6 +26,7 @@
 									<listOptionValue builtIn="false" value="C:/usr/xtensa/XtDevTools/install/builds/RI-2019.1-win32/hifi3_bd5/xtensa-elf/include/xcc/c++/xtensa-elf"/>
 									<listOptionValue builtIn="false" value="C:/usr/xtensa/Xplorer-8.0.10-workspaces/workspace/Test_AE"/>
 									<listOptionValue builtIn="false" value="&quot;C:\usr\xtensa\Xplorer-8.0.10-workspaces\workspace\Task7_AE&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\usr\xtensa\Xplorer-8.0.10-workspaces\workspace\Equalizer&quot;"/>
 								</option>
 								<option id="org.eclipse.cdt.build.core.settings.holder.symbols.1154267194" name="Symbols" superClass="org.eclipse.cdt.build.core.settings.holder.symbols" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="__LONG_LONG_MAX__=9223372036854775807LL"/>
@@ -78,6 +79,7 @@
 									<listOptionValue builtIn="false" value="C:/usr/xtensa/XtDevTools/install/builds/RI-2019.1-win32/hifi3_bd5/xtensa-elf/include/xcc/c++/xtensa-elf"/>
 									<listOptionValue builtIn="false" value="C:/usr/xtensa/Xplorer-8.0.10-workspaces/workspace/Test_AE"/>
 									<listOptionValue builtIn="false" value="&quot;C:\usr\xtensa\Xplorer-8.0.10-workspaces\workspace\Task7_AE&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\usr\xtensa\Xplorer-8.0.10-workspaces\workspace\Equalizer&quot;"/>
 								</option>
 								<option id="org.eclipse.cdt.build.core.settings.holder.symbols.436452160" name="Symbols" superClass="org.eclipse.cdt.build.core.settings.holder.symbols" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="__LONG_LONG_MAX__=9223372036854775807LL"/>
@@ -130,6 +132,7 @@
 									<listOptionValue builtIn="false" value="C:/usr/xtensa/XtDevTools/install/builds/RI-2019.1-win32/hifi3_bd5/xtensa-elf/include/xcc/c++/xtensa-elf"/>
 									<listOptionValue builtIn="false" value="C:/usr/xtensa/Xplorer-8.0.10-workspaces/workspace/Test_AE"/>
 									<listOptionValue builtIn="false" value="&quot;C:\usr\xtensa\Xplorer-8.0.10-workspaces\workspace\Task7_AE&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;C:\usr\xtensa\Xplorer-8.0.10-workspaces\workspace\Equalizer&quot;"/>
 								</option>
 								<option id="org.eclipse.cdt.build.core.settings.holder.symbols.1343964460" name="Symbols" superClass="org.eclipse.cdt.build.core.settings.holder.symbols" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="__LONG_LONG_MAX__=9223372036854775807LL"/>
@@ -203,4 +206,5 @@
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 		</scannerConfigBuildInfo>
 	</storageModule>
+	<storageModule moduleId="refreshScope"/>
 </cproject>

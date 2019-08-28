@@ -12,10 +12,15 @@
 #include "GeneralArithmetic.h"
 #include "InternalTypesArithmetic.h"
 
+#include "CrossFade.h"
 #include "AmplitudeProc.h"
+#include "EQ.h"
 
 
+#define SAMPLE_RATE 	 48000
 #define BYTES_PER_SAMPLE 4
+
+#define HEADROOM 4
 
 #define OPTSTRING "c:i:o:"
 
@@ -25,12 +30,36 @@ typedef struct {
 	char *outputFileName;
 } FileNames;
 
+typedef struct {
+	double inputGain;
+	double outputGain;
+	double balance;
+	CrossFadeParams crossFadeParams;
+	AmplitudeProcParams amplitudeProcParams;
+	EQParams eqParams;
+} Params;
+
+typedef struct {
+	F32x2 inputGain;				// Q31
+	F32x2 outputGain;				// Q31
+	F32x2 balance;					// Q31
+	CrossFadeCoeffs crossFadeCoeffs;
+	AmplitudeProcCoeffs amplitudeProcCoeffs;
+	EQCoeffs eqCoeffs;
+} Coeffs;
+
+typedef struct {
+	CrossFadeStates crossFadeStates;
+	AmplitudeProcStates amplitudeProcStates;
+	EQStates eqStates;
+} States;
+
 
 ALWAYS_INLINE Status initFileNames(FileNames *fileNames);
 ALWAYS_INLINE Status runGetOpt(int argc, char *const argv[], const char *optstring, FileNames *fileNames);
+ALWAYS_INLINE Status init(Params *params, Coeffs *coeffs, States *states, int sampleRate);
 ALWAYS_INLINE Status readConfig(FILE *configFilePtr, Params *params, Coeffs *coeffs, States *states);
-void runAmplitudeProc(FILE *inputFilePtr, FILE *outputFilePtr, RingBuff *ringBuff,
-		 	 	 	  const Coeffs *coeffs, States *states);
+void run(FILE *inputFilePtr, FILE *outputFilePtr, Params *params, Coeffs *coeffs, States *states);
 
 
 int main(int argc, char *argv[])
@@ -47,14 +76,13 @@ int main(int argc, char *argv[])
 	Params params;
 	Coeffs coeffs;
 	States states;
-	RingBuff ringBuff;
 
 	readHeader(headerBuff, inputFilePtr);
 	writeHeader(headerBuff, outputFilePtr);
 
-	AmplitudeProcInit(&params, &coeffs, &ringBuff, &states);
+	init(&params, &coeffs, &states, SAMPLE_RATE);
 	readConfig(configFilePtr, &params, &coeffs, &states);
-	runAmplitudeProc(inputFilePtr, outputFilePtr, &ringBuff, &coeffs, &states);
+	run(inputFilePtr, outputFilePtr, &params, &coeffs, &states);
 
 	fclose(configFilePtr);
 	fclose(inputFilePtr);
@@ -73,6 +101,30 @@ ALWAYS_INLINE Status initFileNames(FileNames *fileNames)
 	fileNames->outputFileName = NULL;
 
 	return statusOK;
+}
+
+ALWAYS_INLINE Status initAlgorithms(Params *params, Coeffs *coeffs, States *states, int sampleRate)
+{
+	Status status = CrossFadeInit(&params->crossFadeParams, &coeffs->crossFadeCoeffs,
+						   &states->crossFadeStates, sampleRate);
+	status |= AmplitudeProcInit(&params->amplitudeProcParams, &coeffs->amplitudeProcCoeffs,
+								&states->amplitudeProcStates, sampleRate);
+	status |= EQInit(&params->eqParams, &coeffs->eqCoeffs, &states->eqStates, sampleRate);
+
+	return status;
+}
+
+ALWAYS_INLINE Status init(Params *params, Coeffs *coeffs, States *states, int sampleRate)
+{
+	params->inputGain = 0;
+	params->outputGain = 0;
+	params->balance = 0;
+
+	coeffs->inputGain = F32x2Zero();
+	coeffs->outputGain = F32x2Zero();
+	coeffs->balance = F32x2Set(0x7fffffff);
+
+	return initAlgorithms(params, coeffs, states, sampleRate);
 }
 
 ALWAYS_INLINE Status runGetOpt(int argc, char *const argv[], const char *optstring, FileNames *fileNames)
@@ -109,10 +161,13 @@ ALWAYS_INLINE Status runGetOpt(int argc, char *const argv[], const char *optstri
 	return statusOK;
 }
 
-ALWAYS_INLINE void parseConfigString(char *str)
+ALWAYS_INLINE void parseConfigString(char *str, uint16_t *paramId, double *paramValue)
 {
 	uint8_t inputIndex = 0;
+	uint8_t idIndex = 0;
 	uint8_t paramIndex = 0;
+	uint8_t isIndex = 1;
+	char idStr[6] = {0};
 	char paramStr[13] = {0};
 
 	while (str[inputIndex])
@@ -120,20 +175,31 @@ ALWAYS_INLINE void parseConfigString(char *str)
 		if (str[inputIndex] == '/' ||
 		   ((str[inputIndex] == ' ' || str[inputIndex] == '	') && paramIndex > 0))
 		{
-			inputIndex = 0;
-			paramIndex = 0;
 			break;
+		}
+		else if (str[inputIndex] == ':')
+		{
+			isIndex = 0;
 		}
 		else if (str[inputIndex] != ' ' && str[inputIndex] != '	' && str[inputIndex] != '\n')
 		{
-			paramStr[paramIndex] = str[inputIndex];
-			paramIndex++;
+			if (isIndex)
+			{
+				idStr[idIndex] = str[inputIndex];
+				idIndex++;
+			}
+			else
+			{
+				paramStr[paramIndex] = str[inputIndex];
+				paramIndex++;
+			}
 		}
 
 		inputIndex++;
 	}
 
-	strcpy(str, paramStr);
+	*paramId = atoi(idStr);
+	*paramValue = atof(paramStr);
 }
 
 ALWAYS_INLINE Status readConfig(FILE *configFilePtr, Params *params, Coeffs *coeffs, States *states)
@@ -142,29 +208,66 @@ ALWAYS_INLINE Status readConfig(FILE *configFilePtr, Params *params, Coeffs *coe
 		return statusError;
 
 	char str[100] = {0};
-	uint16_t paramId = 1;
+	uint16_t paramId;
+	double paramValue;
+	uint8_t i;
 
 	while (fgets(str, 100, configFilePtr))
 	{
-		parseConfigString(str);
+		parseConfigString(str, &paramId, &paramValue);
 
-		if (*str)
+		if (paramId < 150)
 		{
-			AmplitudeProcSetParam(params, coeffs, states, paramId, atof(str));
-			paramId++;
+			CrossFadeSetParam(&params->crossFadeParams, &coeffs->crossFadeCoeffs,
+							  &states->crossFadeStates, paramId, paramValue);
+		}
+		else if (paramId == 151)
+		{
+			params->inputGain = paramValue;
+			coeffs->inputGain = doubleToF32x2Set(dBtoGain(paramValue));
+		}
+		else if (paramId == 152)
+		{
+			params->outputGain = paramValue;
+			coeffs->outputGain = doubleToF32x2Set(dBtoGain(paramValue));
+		}
+		else if (paramId == 153)
+		{
+			params->balance = paramValue;
+			paramValue /= 10;
+
+			if (paramValue < 0)
+			{
+				coeffs->balance = doubleToF32x2Join(1, 1 + paramValue);
+			}
+			else if (paramValue > 0)
+			{
+				coeffs->balance = doubleToF32x2Join(1 - paramValue, 1);
+			}
+		}
+		else if (paramId < 500)
+		{
+			AmplitudeProcSetParam(&params->amplitudeProcParams, &coeffs->amplitudeProcCoeffs,
+								  &states->amplitudeProcStates, paramId, paramValue);
+		}
+		else
+		{
+			EQSetParam(&params->eqParams, &coeffs->eqCoeffs, &states->eqStates,
+					   paramId / 1000 - 1, paramId % 1000, paramValue);
 		}
 	}
 
 }
 
-void runAmplitudeProc(FILE *inputFilePtr, FILE *outputFilePtr, RingBuff *ringBuff,
-		 const Coeffs *coeffs, States *states)
+void run(FILE *inputFilePtr, FILE *outputFilePtr, Params *params, Coeffs *coeffs, States *states)
 {
 	int32_t dataBuff[DATA_BUFF_SIZE * CHANNELS];
 	size_t samplesRead;
 	uint32_t i;
-	F32x2 res;					// Q31
+	F32x2 sample;					// Q27
+	F32x2 bypassSample;				// Q31
 	_Bool isFirstIteration = 1;
+	uint32_t cyclesCounter = 0;
 
 	while (1)
 	{
@@ -175,31 +278,36 @@ void runAmplitudeProc(FILE *inputFilePtr, FILE *outputFilePtr, RingBuff *ringBuf
 			break;
 		}
 
-		if (isFirstIteration)
+// CROSSFADE TEST HERE
+//		if (cyclesCounter == 60)
+//		{
+//			CrossFadeSetParam(&params->crossFadeParams, &coeffs->crossFadeCoeffs,
+//							  &states->crossFadeStates, isBypassID, 1);
+//		}
+
+		for (i = 0; i < samplesRead / CHANNELS; i++)
 		{
-			ringBuffSet(ringBuff, dataBuff);
-			i = RING_BUFF_SIZE;
-			isFirstIteration = 0;
-		}
-		else
-		{
-			i = 0;
-		}
+			bypassSample = F32x2Join(dataBuff[i * CHANNELS], dataBuff[i * CHANNELS + 1]);
+			sample = F32x2RightShiftA(bypassSample, HEADROOM);
+			sample = F32x2Mul(sample, coeffs->inputGain);
+			sample = F32x2Mul(sample, coeffs->balance);
 
-		for (i; i < samplesRead / CHANNELS; i++)
-		{
-			AmplitudeProc_Process(coeffs, ringBuff, states);
-			res = ringBuff->samples[ringBuff->currNum];
+			sample = EQ_Process(&coeffs->eqCoeffs, &states->eqStates, sample);
+			sample = AmplitudeProc_Process(&coeffs->amplitudeProcCoeffs,
+										   &states->amplitudeProcStates, sample);
 
-			ringBuff->samples[ringBuff->currNum] =
-						F32x2Join(dataBuff[i * CHANNELS], dataBuff[i * CHANNELS + 1]);
+			sample = F32x2Mul(sample, coeffs->outputGain);
+			sample = F32x2LeftShiftAS(sample, HEADROOM);
 
-			dataBuff[i * CHANNELS] = F32x2ToI32Extract_h(res);
-			dataBuff[i * CHANNELS + 1] = F32x2ToI32Extract_l(res);
+			sample = CrossFade_Process(&coeffs->crossFadeCoeffs, &states->crossFadeStates,
+							  	  	   bypassSample, sample);
 
-			ringBuff->currNum = (ringBuff->currNum + 1) & (RING_BUFF_SIZE - 1);
+			dataBuff[i * CHANNELS] = F32x2ToI32Extract_h(sample);
+			dataBuff[i * CHANNELS + 1] = F32x2ToI32Extract_l(sample);
 		}
 
 		fwrite(dataBuff, BYTES_PER_SAMPLE, samplesRead, outputFilePtr);
+
+		//cyclesCounter++;
 	}
 }
