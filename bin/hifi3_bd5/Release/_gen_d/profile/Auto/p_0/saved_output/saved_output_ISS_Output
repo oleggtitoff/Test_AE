@@ -1,18 +1,32 @@
-C:\usr\xtensa\XtDevTools\install\tools\RI-2019.1-win32\XtensaTools\bin\xt-run --xtensa-core=hifi3_bd5 --xtensa-system=C:\usr\xtensa\XtDevTools\install\builds\RI-2019.1-win32\hifi3_bd5\config --xtensa-params= --console --turbo --summary --client=C:\usr\xtensa\Xplorer-8.0.10-workspaces\workspace\Test_AE\bin\hifi3_bd5\Release\_gen_d\profile\Auto\p_0\iss.clientcmds C:\usr\xtensa\Xplorer-8.0.10-workspaces\workspace\Test_AE\bin\hifi3_bd5\Release\Test_AE -c Config.txt -i DiffAmplitudeTest.wav -o Output.wav
+C:\usr\xtensa\XtDevTools\install\tools\RI-2019.1-win32\XtensaTools\bin\xt-run --xtensa-core=hifi3_bd5 --xtensa-system=C:\usr\xtensa\XtDevTools\install\builds\RI-2019.1-win32\hifi3_bd5\config --xtensa-params= --console --summary --client=C:\usr\xtensa\Xplorer-8.0.10-workspaces\workspace\Test_AE\bin\hifi3_bd5\Release\_gen_d\profile\Auto\p_0\iss.clientcmds C:\usr\xtensa\Xplorer-8.0.10-workspaces\workspace\Test_AE\bin\hifi3_bd5\Release\Test_AE -c Config.txt -i Sine_-12_1s.wav -o Output.wav
 
-Xtensa Core: "hifi3_bd5"  TurboXim Version: 14.01
+Xtensa Core: "hifi3_bd5"  ISS Version: 14.01
 
-Time for Simulation = 2.64 seconds  (+ 0.53 seconds for Initialization)
+Time for Simulation = 76.87 seconds
 
-Current PC = 0x60009a57
+Current PC = 0x6000ba67
 
-Events                            Number  Number
-                                          per 100
-                                          instrs 
+Events                             Number  Number
+                                           per 100
+                                           instrs 
 
-Committed instructions          9699377 ( 100.00 )
-Taken branches                   413813 (   4.27 )
-Exceptions                         2001 (   0.02 )
-   WindowOverflow                  1001 (   0.01 )
-   WindowUnderflow                 1000 (   0.01 )
+Committed instructions          46216374 ( 100.00 )
+Taken branches                   1023106 (   2.21 )
+Exceptions                          3581 (   0.01 )
+   WindowUnderflow                  1790 (   0.00 )
+   WindowOverflow                   1791 (   0.00 )
+Loads                           16428021 (  35.55 )
+Stores                           3640950 (   7.88 )
+
+Cycles: total = 48901261
+                                                  Summed |          Summed
+                                          CPI      CPI   |% Cycle  % Cycle
+Committed instructions        46216374 ( 1.0000   1.0000 |  94.51    94.51 )
+Taken branches                 2152189 ( 0.0466   1.0466 |   4.40    98.91 )
+Pipeline interlocks             314303 ( 0.0068   1.0534 |   0.64    99.55 )
+Exceptions                       17905 ( 0.0004   1.0538 |   0.04    99.59 )
+Sync replays                       825 ( 0.0000   1.0538 |   0.00    99.59 )
+Special instructions              4933 ( 0.0001   1.0539 |   0.01    99.60 )
+Loop overhead                   194727 ( 0.0042   1.0581 |   0.40   100.00 )
+Reset                                5 ( 0.0000   1.0581 |   0.00   100.00 )
 

@@ -64,6 +64,21 @@ void run(FILE *inputFilePtr, FILE *outputFilePtr, Params *params, Coeffs *coeffs
 
 int main(int argc, char *argv[])
 {
+//	printf("log2Table = %d\n", sizeof(int32_t) * 130);
+//	printf("pow2Table = %d\n", sizeof(int32_t) * 257);
+//
+//	printf("CrossFadeParams = %d\n", sizeof(CrossFadeParams));
+//	printf("AmplitudeProcParams = %d\n", sizeof(AmplitudeProcParams));
+//	printf("EQParams = %d\n", sizeof(EQParams));
+//
+//	printf("CrossFadeCoeffs = %d\n", sizeof(CrossFadeCoeffs));
+//	printf("AmplitudeProcCoeffs = %d\n", sizeof(AmplitudeProcCoeffs));
+//	printf("EQCoeffs = %d\n", sizeof(EQCoeffs));
+//
+//	printf("CrossFadeStates = %d\n", sizeof(CrossFadeStates));
+//	printf("AmplitudeProcStates = %d\n", sizeof(AmplitudeProcStates));
+//	printf("EQStates = %d\n", sizeof(EQStates));
+
 	FileNames fileNames;
 	initFileNames(&fileNames);
 	runGetOpt(argc, argv, OPTSTRING, &fileNames);

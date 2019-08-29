@@ -1,31 +1,37 @@
-**** Incremental Build [Wed, 28 Aug 2019 11:30:10] ****
+**** Incremental Build [Wed, 28 Aug 2019 19:20:19] ****
  Project: Test_AE
  Configuration: hifi3_bd5
  Build Target: Release
 ********************************
 
-"C:\\usr\\xtensa\\XtDevTools\\install\\tools\\RI-2019.1-win32\\XtensaTools\\bin\\xt-xcc" -c -g -O2 -fmessage-length=0 -I "\"C:/usr/xtensa/Xplorer-8.0.10-workspaces/workspace/Task7_AE\"" -I "\"C:/usr/xtensa/Xplorer-8.0.10-workspaces/workspace/Equalizer\"" -I "\"C:/usr/xtensa/Xplorer-8.0.10-workspaces/workspace/Test_AE\"" -DPROC_hifi3_bd5 -DCONFIG_hifi3_bd5 --xtensa-system=C:/usr/xtensa/XtDevTools/install/builds/RI-2019.1-win32/hifi3_bd5/config --xtensa-core=hifi3_bd5 --xtensa-params= "\"C:/usr/xtensa/Xplorer-8.0.10-workspaces/workspace/Test_AE/main.c\"" -o "\"C:/usr/xtensa/Xplorer-8.0.10-workspaces/workspace/Test_AE/bin/hifi3_bd5/Release/main.o\"" 
-Time taken: 1503 ms 
+"C:\\usr\\xtensa\\XtDevTools\\install\\tools\\RI-2019.1-win32\\XtensaTools\\bin\\xt-xcc" -c -g -O3 -fmessage-length=0 -I "\"C:/usr/xtensa/Xplorer-8.0.10-workspaces/workspace/Task7_AE\"" -I "\"C:/usr/xtensa/Xplorer-8.0.10-workspaces/workspace/Equalizer\"" -I "\"C:/usr/xtensa/Xplorer-8.0.10-workspaces/workspace/Test_AE\"" -DPROC_hifi3_bd5 -DCONFIG_hifi3_bd5 --xtensa-system=C:/usr/xtensa/XtDevTools/install/builds/RI-2019.1-win32/hifi3_bd5/config --xtensa-core=hifi3_bd5 --xtensa-params= "\"C:/usr/xtensa/Xplorer-8.0.10-workspaces/workspace/Equalizer/EQ.c\"" -o "\"C:/usr/xtensa/Xplorer-8.0.10-workspaces/workspace/Test_AE/bin/hifi3_bd5/Release/EQ.o\"" 
+Time taken: 1468 ms 
+
+"C:\\usr\\xtensa\\XtDevTools\\install\\tools\\RI-2019.1-win32\\XtensaTools\\bin\\xt-xcc" -c -g -O3 -fmessage-length=0 -I "\"C:/usr/xtensa/Xplorer-8.0.10-workspaces/workspace/Task7_AE\"" -I "\"C:/usr/xtensa/Xplorer-8.0.10-workspaces/workspace/Equalizer\"" -I "\"C:/usr/xtensa/Xplorer-8.0.10-workspaces/workspace/Test_AE\"" -DPROC_hifi3_bd5 -DCONFIG_hifi3_bd5 --xtensa-system=C:/usr/xtensa/XtDevTools/install/builds/RI-2019.1-win32/hifi3_bd5/config --xtensa-core=hifi3_bd5 --xtensa-params= "\"C:/usr/xtensa/Xplorer-8.0.10-workspaces/workspace/Test_AE/main.c\"" -o "\"C:/usr/xtensa/Xplorer-8.0.10-workspaces/workspace/Test_AE/bin/hifi3_bd5/Release/main.o\"" 
+Time taken: 1520 ms 
+
+"C:\\usr\\xtensa\\XtDevTools\\install\\tools\\RI-2019.1-win32\\XtensaTools\\bin\\xt-xcc" -c -g -O3 -fmessage-length=0 -I "\"C:/usr/xtensa/Xplorer-8.0.10-workspaces/workspace/Task7_AE\"" -I "\"C:/usr/xtensa/Xplorer-8.0.10-workspaces/workspace/Equalizer\"" -I "\"C:/usr/xtensa/Xplorer-8.0.10-workspaces/workspace/Test_AE\"" -DPROC_hifi3_bd5 -DCONFIG_hifi3_bd5 --xtensa-system=C:/usr/xtensa/XtDevTools/install/builds/RI-2019.1-win32/hifi3_bd5/config --xtensa-core=hifi3_bd5 --xtensa-params= "\"C:/usr/xtensa/Xplorer-8.0.10-workspaces/workspace/Task7_AE/AmplitudeProc.c\"" -o "\"C:/usr/xtensa/Xplorer-8.0.10-workspaces/workspace/Test_AE/bin/hifi3_bd5/Release/AmplitudeProc.o\"" 
+Time taken: 2249 ms 
 
 "C:\\usr\\xtensa\\XtDevTools\\install\\tools\\RI-2019.1-win32\\XtensaTools\\bin\\xt-xc++" -Wl,@C:/usr/xtensa/Xplorer-8.0.10-workspaces/workspace/Test_AE/bin/hifi3_bd5/Release/objfiles.list -o C:/usr/xtensa/Xplorer-8.0.10-workspaces/workspace/Test_AE/bin/hifi3_bd5/Release/Test_AE.minsize -mlsp=sim -Wl,-r -nostdlib --xtensa-system=C:/usr/xtensa/XtDevTools/install/builds/RI-2019.1-win32/hifi3_bd5/config --xtensa-core=hifi3_bd5 --xtensa-params= 
-Time taken: 226 ms 
+Time taken: 230 ms 
 
 "C:\\usr\\xtensa\\XtDevTools\\install\\tools\\RI-2019.1-win32\\XtensaTools\\bin\\xt-xc++" -Wl,@C:/usr/xtensa/Xplorer-8.0.10-workspaces/workspace/Test_AE/bin/hifi3_bd5/Release/objfiles.list -o C:/usr/xtensa/Xplorer-8.0.10-workspaces/workspace/Test_AE/bin/hifi3_bd5/Release/Test_AE -mlsp=sim --xtensa-system=C:/usr/xtensa/XtDevTools/install/builds/RI-2019.1-win32/hifi3_bd5/config --xtensa-core=hifi3_bd5 --xtensa-params= 
-Time taken: 435 ms 
+Time taken: 490 ms 
 
 ******* Code size summary *****
 
 "C:\\usr\\xtensa\\XtDevTools\\install\\tools\\RI-2019.1-win32\\XtensaTools\\bin\\xt-size" -C C:/usr/xtensa/Xplorer-8.0.10-workspaces/workspace/Test_AE/bin/hifi3_bd5/Release/Test_AE 
 TYPE   	   text	 rodata	   data	    bss	    dec    hex	filename
-code   	  46463	      0	      0	      0	  46463	   b57f	C:/usr/xtensa/Xplorer-8.0.10-workspaces/workspace/Test_AE/bin/hifi3_bd5/Release/Test_AE
+code   	  46427	      0	      0	      0	  46427	   b55b	C:/usr/xtensa/Xplorer-8.0.10-workspaces/workspace/Test_AE/bin/hifi3_bd5/Release/Test_AE
 literal	   1084	      0	      0	      0	   1084	    43c	C:/usr/xtensa/Xplorer-8.0.10-workspaces/workspace/Test_AE/bin/hifi3_bd5/Release/Test_AE
-other  	   1241	   4816	    904	   1136	   8097	   1fa1	C:/usr/xtensa/Xplorer-8.0.10-workspaces/workspace/Test_AE/bin/hifi3_bd5/Release/Test_AE
-Total  	  48788	   4816	    904	   1136	  55644	   d95c	C:/usr/xtensa/Xplorer-8.0.10-workspaces/workspace/Test_AE/bin/hifi3_bd5/Release/Test_AE
+other  	   1285	   4816	    904	   1136	   8141	   1fcd	C:/usr/xtensa/Xplorer-8.0.10-workspaces/workspace/Test_AE/bin/hifi3_bd5/Release/Test_AE
+Total  	  48796	   4816	    904	   1136	  55652	   d964	C:/usr/xtensa/Xplorer-8.0.10-workspaces/workspace/Test_AE/bin/hifi3_bd5/Release/Test_AE
 
-Time taken: 141 ms 
+Time taken: 133 ms 
 
 ******* ************** *****
 
 Build successful !!
-Total time taken: 2.554 secs
-**** Build Finished [Wed, 28 Aug 2019 11:30:12] ****
+Total time taken: 3.391 secs
+**** Build Finished [Wed, 28 Aug 2019 19:20:22] ****

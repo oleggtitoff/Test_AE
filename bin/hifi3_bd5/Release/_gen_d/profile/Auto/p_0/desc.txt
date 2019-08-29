@@ -1,6 +1,6 @@
 
 
-Program Arguments : -c Config.txt -i DiffAmplitudeTest.wav -o Output.wav
+Program Arguments : -c Config.txt -i Sine_-12_1s.wav -o Output.wav
 
 Cache Configuration Options...
 Performance Modelling : Disabled

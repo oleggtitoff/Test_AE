@@ -9,15 +9,15 @@
 //
 // === Config values for AmplitudeProc algorithm ===
 //
-00201:   0		// NoiseGate  isActive   (0, or 1)
-00202:   0		// Expander   isActive   (0, or 1)
-00203:   0		// Compressor isActive   (0, or 1)
-00204:   0		// Limiter    isActive   (0, or 1)
+00201:   1		// NoiseGate  isActive   (0, or 1)
+00202:   1		// Expander   isActive   (0, or 1)
+00203:   1		// Compressor isActive   (0, or 1)
+00204:   1		// Limiter    isActive   (0, or 1)
 
 00205:   -70		// NoiseGate  threshold   (-70 dB, or less)
 00206:   -7		// Expander   threshold   (high threshold in dB)
 00207:   -5		// Compressor threshold   (low threshold in dB)
-00208:   -1.0		// Limiter    threshold   (in dB)
+00208:   -4.0		// Limiter    threshold   (in dB)
 
 00209:   0.65		// Expander   ratio   (range: 0.5 - 16)
 00210:   2		// Compressor ratio   (range: 0.5 - 16)
@@ -42,73 +42,73 @@
 // lowShelf  = 6,
 // highShelf = 7
 //
-00500:   0		// isEQActive		(0, or 1)
+00500:   1		// isEQActive		(0, or 1)
 //
 // --- BAND 1 ---
 01001:   1		// isActive		(0, or 1)
-01002:   5		// filter type		[1 - 7]
+01002:   2		// filter type		[1 - 7]
 01003:   2200		// cutoff frequency
-01004:   3.707		// Q value
-01005:   15		// peak gain
+01004:   0.707		// Q value
+01005:   6		// peak gain
 
 // --- BAND 2 ---
 02001:   1		// isActive		(0, or 1)
 02002:   5		// filter type		[1 - 7]
 02003:   4380		// cutoff frequency
 02004:   3		// Q value
-02005:   15		// peak gain
+02005:   9		// peak gain
 
 // --- BAND 3 ---
-03001:   0		// isActive		(0, or 1)
+03001:   1		// isActive		(0, or 1)
 03002:   5		// filter type		[1 - 7]
 03003:   6560		// cutoff frequency
 03004:   3		// Q value
 03005:   6		// peak gain
 
 // --- BAND 4 ---
-04001:   0		// isActive		(0, or 1)
+04001:   1		// isActive		(0, or 1)
 04002:   5		// filter type		[1 - 7]
 04003:   8740		// cutoff frequency
 04004:   3		// Q value
 04005:   2		// peak gain
 
 // --- BAND 5 ---
-05001:   0		// isActive		(0, or 1)
+05001:   1		// isActive		(0, or 1)
 05002:   5		// filter type		[1 - 7]
 05003:   10920		// cutoff frequency
 05004:   3		// Q value
 05005:   6		// peak gain
 
 // --- BAND 6 ---
-06001:   0		// isActive		(0, or 1)
+06001:   1		// isActive		(0, or 1)
 06002:   5		// filter type		[1 - 7]
 06003:   13100		// cutoff frequency
 06004:   3		// Q value
 06005:   6		// peak gain
 
 // --- BAND 7 ---
-07001:   0		// isActive		(0, or 1)
+07001:   1		// isActive		(0, or 1)
 07002:   5		// filter type		[1 - 7]
 07003:   15280		// cutoff frequency
 07004:   3		// Q value
 07005:   -6		// peak gain
 
 // --- BAND 8 ---
-08001:   0		// isActive		(0, or 1)
+08001:   1		// isActive		(0, or 1)
 08002:   5		// filter type		[1 - 7]
 08003:   17460		// cutoff frequency
 08004:   3		// Q value
 08005:   -6		// peak gain
 
 // --- BAND 9 ---
-09001:   0		// isActive		(0, or 1)
+09001:   1		// isActive		(0, or 1)
 09002:   5		// filter type		[1 - 7]
 09003:   19640		// cutoff frequency
 09004:   3		// Q value
 09005:   6		// peak gain
 
 // --- BAND 10 ---
-10001:   0		// isActive		(0, or 1)
+10001:   1		// isActive		(0, or 1)
 10002:   7		// filter type		[1 - 7]
 10003:   21820		// cutoff frequency
 10004:   0.707		// Q value
