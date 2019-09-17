@@ -2,31 +2,31 @@ C:\usr\xtensa\XtDevTools\install\tools\RI-2019.1-win32\XtensaTools\bin\xt-run --
 
 Xtensa Core: "hifi3_bd5"  ISS Version: 14.01
 
-Time for Simulation = 76.87 seconds
+Time for Simulation = 0.00 seconds
 
-Current PC = 0x6000ba67
+Current PC = 0x60006c97
 
-Events                             Number  Number
-                                           per 100
-                                           instrs 
+Events                           Number  Number
+                                         per 100
+                                         instrs 
 
-Committed instructions          46216374 ( 100.00 )
-Taken branches                   1023106 (   2.21 )
-Exceptions                          3581 (   0.01 )
-   WindowUnderflow                  1790 (   0.00 )
-   WindowOverflow                   1791 (   0.00 )
-Loads                           16428021 (  35.55 )
-Stores                           3640950 (   7.88 )
+Committed instructions            2079 ( 100.00 )
+Taken branches                     369 (  17.75 )
+Exceptions                          13 (   0.63 )
+   WindowUnderflow                   6 (   0.29 )
+   WindowOverflow                    7 (   0.34 )
+Loads                              230 (  11.06 )
+Stores                              92 (   4.43 )
 
-Cycles: total = 48901261
-                                                  Summed |          Summed
-                                          CPI      CPI   |% Cycle  % Cycle
-Committed instructions        46216374 ( 1.0000   1.0000 |  94.51    94.51 )
-Taken branches                 2152189 ( 0.0466   1.0466 |   4.40    98.91 )
-Pipeline interlocks             314303 ( 0.0068   1.0534 |   0.64    99.55 )
-Exceptions                       17905 ( 0.0004   1.0538 |   0.04    99.59 )
-Sync replays                       825 ( 0.0000   1.0538 |   0.00    99.59 )
-Special instructions              4933 ( 0.0001   1.0539 |   0.01    99.60 )
-Loop overhead                   194727 ( 0.0042   1.0581 |   0.40   100.00 )
-Reset                                5 ( 0.0000   1.0581 |   0.00   100.00 )
+Cycles: total = 3986
+                                                Summed |          Summed
+                                        CPI      CPI   |% Cycle  % Cycle
+Committed instructions          2079 ( 1.0000   1.0000 |  52.16    52.16 )
+Taken branches                   766 ( 0.3684   1.3684 |  19.22    71.37 )
+Pipeline interlocks              112 ( 0.0539   1.4223 |   2.81    74.18 )
+Exceptions                        65 ( 0.0313   1.4536 |   1.63    75.82 )
+Sync replays                     585 ( 0.2814   1.7350 |  14.68    90.49 )
+Special instructions             373 ( 0.1794   1.9144 |   9.36    99.85 )
+Loop overhead                      1 ( 0.0005   1.9149 |   0.03    99.87 )
+Reset                              5 ( 0.0024   1.9173 |   0.13   100.00 )
 

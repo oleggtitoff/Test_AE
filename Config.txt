@@ -1,5 +1,5 @@
-00100:   0		// Bypass		 (0, or 1)
-00101:   7		// Bypass fade time	 (in ms)
+00100:   0		// isBypass		 (0, or 1)
+00101:   7		// Crossfade time	 (in ms)
 
 
 00151:   0		// Input gain  (in dB,	0, or less)
@@ -19,7 +19,7 @@
 00207:   -5		// Compressor threshold   (low threshold in dB)
 00208:   -4.0		// Limiter    threshold   (in dB)
 
-00209:   0.65		// Expander   ratio   (range: 0.5 - 16)
+00209:   2.0		// Expander   ratio   (range: 0.5 - 16)
 00210:   2		// Compressor ratio   (range: 0.5 - 16)
 
 00211:   0.0001		// Envelope   attack  time   (in ms)
@@ -42,7 +42,7 @@
 // lowShelf  = 6,
 // highShelf = 7
 //
-00500:   1		// isEQActive		(0, or 1)
+00500:   0		// isEQActive		(0, or 1)
 //
 // --- BAND 1 ---
 01001:   1		// isActive		(0, or 1)

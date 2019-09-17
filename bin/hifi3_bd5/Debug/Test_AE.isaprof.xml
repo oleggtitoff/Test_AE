@@ -3864,97 +3864,135 @@
    <key value="0x50004ca"/>
   </keys>
  </isa>
- <function name="AmplitudeProc_Process" addr="0x600034bc">
-  <sample key="0x25" count="1924"/>
-  <sample key="0x24" count="698"/>
-  <sample key="0x186" count="599"/>
-  <sample key="0x1a5" count="515"/>
-  <sample key="0x4b" count="500"/>
-  <sample key="0xdf" count="368"/>
-  <sample key="0x64" count="328"/>
-  <sample key="0x53" count="317"/>
-  <sample key="0xd4" count="222"/>
-  <sample key="0x52" count="208"/>
-  <sample key="0x2e" count="147"/>
-  <sample key="0x75" count="147"/>
-  <sample key="0x200001f" count="147"/>
-  <sample key="0x2f" count="147"/>
-  <sample key="0xe0" count="147"/>
-  <sample key="0x170" count="143"/>
-  <sample key="0x252" count="114"/>
-  <sample key="0x1bd" count="98"/>
-  <sample key="0xd5" count="72"/>
-  <sample key="0x6e" count="70"/>
-  <sample key="0x21c" count="63"/>
-  <sample key="0xd3" count="54"/>
-  <sample key="0x200001b" count="54"/>
-  <sample key="0x2000020" count="52"/>
-  <sample key="0x51" count="42"/>
-  <sample key="0x21b" count="39"/>
-  <sample key="0x219" count="31"/>
-  <sample key="0x11b" count="31"/>
-  <sample key="0x214" count="29"/>
-  <sample key="0x1000019" count="28"/>
-  <sample key="0x100001e" count="25"/>
-  <sample key="0x2a6" count="24"/>
-  <sample key="0xd6" count="18"/>
-  <sample key="0x28" count="16"/>
-  <sample key="0x269" count="16"/>
-  <sample key="0x21f" count="15"/>
-  <sample key="0x2a7" count="15"/>
-  <sample key="0x62" count="15"/>
-  <sample key="0x277" count="14"/>
-  <sample key="0x504047f" count="14"/>
-  <sample key="0x500005e" count="14"/>
-  <sample key="0x268" count="13"/>
-  <sample key="0x253" count="12"/>
-  <sample key="0x271" count="10"/>
-  <sample key="0xd2" count="10"/>
-  <sample key="0x240" count="8"/>
-  <sample key="0x57" count="8"/>
-  <sample key="0x288" count="6"/>
-  <sample key="0x5" count="5"/>
-  <sample key="0x4f" count="5"/>
-  <sample key="0x504005e" count="5"/>
-  <sample key="0x100001a" count="4"/>
-  <sample key="0x194" count="4"/>
-  <sample key="0x2c5" count="4"/>
-  <sample key="0x1c7" count="4"/>
-  <sample key="0x1000023" count="4"/>
-  <sample key="0x2a" count="4"/>
-  <sample key="0x18a" count="3"/>
-  <sample key="0x27a" count="3"/>
-  <sample key="0x500013a" count="3"/>
-  <sample key="0x29" count="2"/>
-  <sample key="0x279" count="2"/>
-  <sample key="0x61" count="2"/>
-  <sample key="0x50004a7" count="1"/>
-  <sample key="0x4a8" count="1"/>
-  <sample key="0x5000278" count="1"/>
-  <sample key="0x27b" count="1"/>
-  <sample key="0x28b" count="1"/>
-  <sample key="0x3e" count="1"/>
-  <sample key="0x3f" count="1"/>
-  <sample key="0x40" count="1"/>
-  <sample key="0x41" count="1"/>
+ <function name="compressor" addr="0x60003abc">
+  <sample key="0x25" count="663"/>
+  <sample key="0x24" count="371"/>
+  <sample key="0x186" count="271"/>
+  <sample key="0x1a5" count="233"/>
+  <sample key="0x4b" count="94"/>
+  <sample key="0x53" count="77"/>
+  <sample key="0x170" count="73"/>
+  <sample key="0x64" count="73"/>
+  <sample key="0x252" count="58"/>
+  <sample key="0xdf" count="58"/>
+  <sample key="0x52" count="55"/>
+  <sample key="0x1bd" count="50"/>
+  <sample key="0x21c" count="31"/>
+  <sample key="0xd4" count="30"/>
+  <sample key="0x2e" count="25"/>
+  <sample key="0x75" count="25"/>
+  <sample key="0x200001f" count="25"/>
+  <sample key="0x2f" count="25"/>
+  <sample key="0xe0" count="25"/>
+  <sample key="0x21b" count="20"/>
+  <sample key="0x2000020" count="20"/>
+  <sample key="0x100001e" count="14"/>
+  <sample key="0x214" count="13"/>
+  <sample key="0x11b" count="13"/>
+  <sample key="0x1000019" count="12"/>
+  <sample key="0x2a6" count="11"/>
+  <sample key="0x240" count="10"/>
+  <sample key="0xd5" count="10"/>
+  <sample key="0x6e" count="10"/>
+  <sample key="0x219" count="9"/>
+  <sample key="0x504047f" count="9"/>
+  <sample key="0x269" count="9"/>
+  <sample key="0x500005e" count="9"/>
+  <sample key="0x28" count="8"/>
+  <sample key="0x268" count="8"/>
+  <sample key="0xd3" count="8"/>
+  <sample key="0x200001b" count="8"/>
+  <sample key="0x2a7" count="7"/>
+  <sample key="0x253" count="6"/>
+  <sample key="0x277" count="5"/>
+  <sample key="0x21f" count="5"/>
+  <sample key="0x1000023" count="5"/>
+  <sample key="0x288" count="3"/>
+  <sample key="0x271" count="2"/>
+  <sample key="0x2c5" count="2"/>
+  <sample key="0xd2" count="2"/>
+  <sample key="0x2a" count="2"/>
+  <sample key="0xd6" count="2"/>
+  <sample key="0x100001a" count="1"/>
+  <sample key="0x279" count="1"/>
+  <sample key="0x500013a" count="1"/>
   <sample key="0xa" count="1"/>
+  <sample key="0x57" count="1"/>
+  <sample key="0x504005e" count="1"/>
   <sample key="0x200000e" count="1"/>
  </function>
- <function name="AmplitudeProcSetParam" addr="0x60001fb0">
-  <sample key="0x51" count="231"/>
-  <sample key="0x2000020" count="160"/>
-  <sample key="0x5" count="158"/>
-  <sample key="0x52" count="152"/>
-  <sample key="0x25" count="134"/>
-  <sample key="0x62" count="130"/>
+ <function name="expander" addr="0x60001d90">
+  <sample key="0x25" count="663"/>
+  <sample key="0x24" count="371"/>
+  <sample key="0x186" count="271"/>
+  <sample key="0x1a5" count="233"/>
+  <sample key="0x4b" count="94"/>
+  <sample key="0x53" count="77"/>
+  <sample key="0x170" count="73"/>
+  <sample key="0x64" count="73"/>
+  <sample key="0x252" count="58"/>
+  <sample key="0xdf" count="58"/>
+  <sample key="0x52" count="55"/>
+  <sample key="0x1bd" count="50"/>
+  <sample key="0x21c" count="31"/>
+  <sample key="0xd4" count="30"/>
+  <sample key="0x2e" count="25"/>
+  <sample key="0x75" count="25"/>
+  <sample key="0x200001f" count="25"/>
+  <sample key="0x2f" count="25"/>
+  <sample key="0xe0" count="25"/>
+  <sample key="0x21b" count="20"/>
+  <sample key="0x2000020" count="20"/>
+  <sample key="0x100001e" count="14"/>
+  <sample key="0x214" count="13"/>
+  <sample key="0x11b" count="13"/>
+  <sample key="0x1000019" count="12"/>
+  <sample key="0x2a6" count="11"/>
+  <sample key="0x240" count="10"/>
+  <sample key="0xd5" count="10"/>
+  <sample key="0x6e" count="10"/>
+  <sample key="0x219" count="9"/>
+  <sample key="0x504047f" count="9"/>
+  <sample key="0x269" count="9"/>
+  <sample key="0x500005e" count="9"/>
+  <sample key="0x28" count="8"/>
+  <sample key="0x268" count="8"/>
+  <sample key="0xd3" count="8"/>
+  <sample key="0x200001b" count="8"/>
+  <sample key="0x2a7" count="7"/>
+  <sample key="0x253" count="6"/>
+  <sample key="0x277" count="5"/>
+  <sample key="0x21f" count="5"/>
+  <sample key="0x1000023" count="5"/>
+  <sample key="0x288" count="3"/>
+  <sample key="0x271" count="2"/>
+  <sample key="0x2c5" count="2"/>
+  <sample key="0xd2" count="2"/>
+  <sample key="0x2a" count="2"/>
+  <sample key="0xd6" count="2"/>
+  <sample key="0x100001a" count="1"/>
+  <sample key="0x279" count="1"/>
+  <sample key="0x500013a" count="1"/>
+  <sample key="0xa" count="1"/>
+  <sample key="0x57" count="1"/>
+  <sample key="0x504005e" count="1"/>
+  <sample key="0x200000e" count="1"/>
+ </function>
+ <function name="AmplitudeProcSetParam" addr="0x60005fc4">
+  <sample key="0x51" count="223"/>
+  <sample key="0x5" count="150"/>
+  <sample key="0x2000020" count="148"/>
+  <sample key="0x52" count="144"/>
+  <sample key="0x25" count="133"/>
   <sample key="0x24" count="123"/>
+  <sample key="0x62" count="122"/>
   <sample key="0x100001e" count="121"/>
   <sample key="0x1a5" count="90"/>
   <sample key="0x1bd" count="84"/>
   <sample key="0x170" count="70"/>
   <sample key="0x1000023" count="55"/>
-  <sample key="0x4d" count="54"/>
   <sample key="0x21c" count="50"/>
+  <sample key="0x4d" count="50"/>
   <sample key="0x200001f" count="44"/>
   <sample key="0x252" count="36"/>
   <sample key="0x64" count="26"/>
@@ -3964,17 +4002,15 @@
   <sample key="0x3e" count="17"/>
   <sample key="0x40" count="16"/>
   <sample key="0xdf" count="16"/>
-  <sample key="0x53" count="12"/>
+  <sample key="0x53" count="8"/>
   <sample key="0xd4" count="8"/>
   <sample key="0x1000019" count="5"/>
-  <sample key="0x43" count="5"/>
   <sample key="0x2e" count="4"/>
   <sample key="0xd3" count="4"/>
   <sample key="0x200001b" count="4"/>
   <sample key="0x75" count="4"/>
   <sample key="0x2f" count="4"/>
   <sample key="0xd5" count="4"/>
-  <sample key="0x11b" count="4"/>
   <sample key="0x6e" count="4"/>
   <sample key="0xe0" count="4"/>
   <sample key="0x57" count="3"/>
@@ -3982,17 +4018,18 @@
   <sample key="0x5000140" count="2"/>
   <sample key="0x28" count="1"/>
   <sample key="0x5000132" count="1"/>
+  <sample key="0x43" count="1"/>
   <sample key="0xa" count="1"/>
   <sample key="0x4e" count="1"/>
   <sample key="0x4f" count="1"/>
   <sample key="0x200000e" count="1"/>
   <sample key="0x61" count="1"/>
  </function>
- <function name="main" addr="0x6000a920">
-  <sample key="0x51" count="264"/>
+ <function name="main" addr="0x60009bd0">
+  <sample key="0x51" count="265"/>
   <sample key="0x2000020" count="173"/>
   <sample key="0x25" count="155"/>
-  <sample key="0x62" count="130"/>
+  <sample key="0x62" count="131"/>
   <sample key="0x24" count="116"/>
   <sample key="0x5" count="115"/>
   <sample key="0x52" count="94"/>
@@ -4035,7 +4072,7 @@
   <sample key="0x4b" count="1"/>
   <sample key="0x200000e" count="1"/>
  </function>
- <function name="calcBiquadCoeffs" addr="0x60008d58">
+ <function name="calcBiquadCoeffs" addr="0x60007fd8">
   <sample key="0x100001e" count="377"/>
   <sample key="0x5" count="242"/>
   <sample key="0x24" count="133"/>
@@ -4068,7 +4105,56 @@
   <sample key="0x200000e" count="1"/>
   <sample key="0x30" count="1"/>
  </function>
- <function name="_Putfld" addr="0x6000f040">
+ <function name="AmplitudeProc_Process" addr="0x60007424">
+  <sample key="0x25" count="163"/>
+  <sample key="0x4b" count="96"/>
+  <sample key="0xdf" count="74"/>
+  <sample key="0x186" count="66"/>
+  <sample key="0x24" count="63"/>
+  <sample key="0x1a5" count="59"/>
+  <sample key="0x64" count="56"/>
+  <sample key="0x53" count="53"/>
+  <sample key="0xd4" count="50"/>
+  <sample key="0x52" count="36"/>
+  <sample key="0x2e" count="30"/>
+  <sample key="0x75" count="30"/>
+  <sample key="0x200001f" count="30"/>
+  <sample key="0x2f" count="30"/>
+  <sample key="0xe0" count="30"/>
+  <sample key="0x51" count="19"/>
+  <sample key="0x6e" count="15"/>
+  <sample key="0xd5" count="14"/>
+  <sample key="0xd3" count="12"/>
+  <sample key="0x200001b" count="12"/>
+  <sample key="0x1000019" count="7"/>
+  <sample key="0x170" count="6"/>
+  <sample key="0x100001e" count="6"/>
+  <sample key="0x219" count="5"/>
+  <sample key="0x5" count="5"/>
+  <sample key="0x252" count="4"/>
+  <sample key="0x504047f" count="4"/>
+  <sample key="0x1bd" count="4"/>
+  <sample key="0x57" count="4"/>
+  <sample key="0x2000020" count="4"/>
+  <sample key="0x500005e" count="4"/>
+  <sample key="0x21c" count="3"/>
+  <sample key="0x271" count="2"/>
+  <sample key="0x27a" count="2"/>
+  <sample key="0x21b" count="2"/>
+  <sample key="0x2a6" count="2"/>
+  <sample key="0x62" count="2"/>
+  <sample key="0x1000023" count="2"/>
+  <sample key="0xd6" count="2"/>
+  <sample key="0x29" count="1"/>
+  <sample key="0x268" count="1"/>
+  <sample key="0x18a" count="1"/>
+  <sample key="0x277" count="1"/>
+  <sample key="0x269" count="1"/>
+  <sample key="0xa" count="1"/>
+  <sample key="0x4f" count="1"/>
+  <sample key="0x200000e" count="1"/>
+ </function>
+ <function name="_Putfld" addr="0x6000e2f8">
   <sample key="0x100001e" count="126"/>
   <sample key="0x1000023" count="122"/>
   <sample key="0x2000020" count="118"/>
@@ -4120,7 +4206,7 @@
   <sample key="0x4b" count="1"/>
   <sample key="0x4e" count="1"/>
  </function>
- <function name="_Pow" addr="0x6000bdd8">
+ <function name="_Pow" addr="0x6000b090">
   <sample key="0x51" count="109"/>
   <sample key="0x5" count="90"/>
   <sample key="0x62" count="64"/>
@@ -4156,7 +4242,7 @@
   <sample key="0x33" count="1"/>
   <sample key="0xa" count="1"/>
  </function>
- <function name="EQ_Process" addr="0x60009f68">
+ <function name="EQ_Process" addr="0x600091e8">
   <sample key="0x25" count="147"/>
   <sample key="0x24" count="129"/>
   <sample key="0x194" count="94"/>
@@ -4197,7 +4283,7 @@
   <sample key="0x200000e" count="1"/>
   <sample key="0x11b" count="1"/>
  </function>
- <function name="_Ldtob" addr="0x60011ad8">
+ <function name="_Ldtob" addr="0x60010d90">
   <sample key="0x100001a" count="45"/>
   <sample key="0x2000020" count="45"/>
   <sample key="0x51" count="42"/>
@@ -4258,7 +4344,7 @@
   <sample key="0x200000e" count="1"/>
   <sample key="0x30" count="1"/>
  </function>
- <function name="AmplitudeProcInit" addr="0x60001b10">
+ <function name="AmplitudeProcInit" addr="0x60005b24">
   <sample key="0x2000020" count="52"/>
   <sample key="0x51" count="38"/>
   <sample key="0x4b" count="30"/>
@@ -4302,7 +4388,7 @@
   <sample key="0xa" count="1"/>
   <sample key="0x200000e" count="1"/>
  </function>
- <function name="_LXp_addh" addr="0x60012bd0">
+ <function name="_LXp_addh" addr="0x60011e88">
   <sample key="0x51" count="59"/>
   <sample key="0x62" count="54"/>
   <sample key="0x1000023" count="31"/>
@@ -4346,7 +4432,7 @@
   <sample key="0x57" count="1"/>
   <sample key="0x11b" count="1"/>
  </function>
- <function name="_Xp_addh" addr="0x60010af0">
+ <function name="_Xp_addh" addr="0x6000fda8">
   <sample key="0x51" count="59"/>
   <sample key="0x62" count="54"/>
   <sample key="0x1000023" count="31"/>
@@ -4390,7 +4476,7 @@
   <sample key="0x57" count="1"/>
   <sample key="0x11b" count="1"/>
  </function>
- <function name="_Genld" addr="0x60012828">
+ <function name="_Genld" addr="0x60011ae0">
   <sample key="0x100001e" count="38"/>
   <sample key="0x1000023" count="25"/>
   <sample key="0x504005e" count="24"/>
@@ -4441,7 +4527,7 @@
   <sample key="0x5e" count="1"/>
   <sample key="0x6f" count="1"/>
  </function>
- <function name="__umoddi3" addr="0x600135d8">
+ <function name="__umoddi3" addr="0x60012890">
   <sample key="0x200001f" count="35"/>
   <sample key="0x2a" count="31"/>
   <sample key="0x5" count="26"/>
@@ -4480,7 +4566,7 @@
   <sample key="0x4d" count="1"/>
   <sample key="0x58" count="1"/>
  </function>
- <function name="_Exp" addr="0x6000c570">
+ <function name="_Exp" addr="0x6000b828">
   <sample key="0x200001f" count="63"/>
   <sample key="0x5" count="47"/>
   <sample key="0x100001e" count="35"/>
@@ -4506,7 +4592,7 @@
   <sample key="0x5000130" count="1"/>
   <sample key="0xa" count="1"/>
  </function>
- <function name="__udivdi3" addr="0x60013270">
+ <function name="__udivdi3" addr="0x60012528">
   <sample key="0x200001f" count="38"/>
   <sample key="0x5" count="26"/>
   <sample key="0x51" count="26"/>
@@ -4544,7 +4630,7 @@
   <sample key="0x4d" count="1"/>
   <sample key="0x58" count="1"/>
  </function>
- <function name="_Printf" addr="0x6000ecd8">
+ <function name="_Printf" addr="0x6000df90">
   <sample key="0x53" count="19"/>
   <sample key="0x2000020" count="19"/>
   <sample key="0x62" count="19"/>
@@ -4597,7 +4683,7 @@
   <sample key="0x5d" count="1"/>
   <sample key="0x2a" count="1"/>
  </function>
- <function name="__ieee754_sqrt" addr="0x60013950">
+ <function name="__ieee754_sqrt" addr="0x60012c08">
   <sample key="0x1000019" count="26"/>
   <sample key="0x100001e" count="19"/>
   <sample key="0x2f" count="19"/>
@@ -4646,7 +4732,92 @@
   <sample key="0x6f" count="1"/>
   <sample key="0x70" count="1"/>
  </function>
- <function name="_Log" addr="0x6000c8b0">
+ <function name="limiter" addr="0x600057e8">
+  <sample key="0x24" count="46"/>
+  <sample key="0x186" count="43"/>
+  <sample key="0x1a5" count="32"/>
+  <sample key="0x25" count="27"/>
+  <sample key="0x53" count="10"/>
+  <sample key="0x4b" count="8"/>
+  <sample key="0x2000020" count="8"/>
+  <sample key="0x64" count="8"/>
+  <sample key="0x51" count="6"/>
+  <sample key="0xdf" count="6"/>
+  <sample key="0x100001e" count="5"/>
+  <sample key="0x271" count="4"/>
+  <sample key="0x194" count="4"/>
+  <sample key="0x21f" count="4"/>
+  <sample key="0x1c7" count="4"/>
+  <sample key="0x4f" count="4"/>
+  <sample key="0x52" count="4"/>
+  <sample key="0x11b" count="4"/>
+  <sample key="0x219" count="3"/>
+  <sample key="0x214" count="3"/>
+  <sample key="0x2e" count="3"/>
+  <sample key="0x75" count="3"/>
+  <sample key="0x200001f" count="3"/>
+  <sample key="0x504005e" count="3"/>
+  <sample key="0x2f" count="3"/>
+  <sample key="0xe0" count="3"/>
+  <sample key="0x100001a" count="2"/>
+  <sample key="0x18a" count="2"/>
+  <sample key="0x277" count="2"/>
+  <sample key="0x57" count="2"/>
+  <sample key="0x61" count="2"/>
+  <sample key="0x62" count="2"/>
+  <sample key="0x29" count="1"/>
+  <sample key="0x50004a7" count="1"/>
+  <sample key="0x4a8" count="1"/>
+  <sample key="0x5000278" count="1"/>
+  <sample key="0x27b" count="1"/>
+  <sample key="0x21c" count="1"/>
+  <sample key="0x2a7" count="1"/>
+  <sample key="0x269" count="1"/>
+  <sample key="0x28b" count="1"/>
+  <sample key="0x500013a" count="1"/>
+  <sample key="0x3e" count="1"/>
+  <sample key="0x3f" count="1"/>
+  <sample key="0x40" count="1"/>
+  <sample key="0x41" count="1"/>
+  <sample key="0xa" count="1"/>
+  <sample key="0x200000e" count="1"/>
+  <sample key="0x1000023" count="1"/>
+ </function>
+ <function name="noiseGate" addr="0x60001a60">
+  <sample key="0x4b" count="42"/>
+  <sample key="0xdf" count="32"/>
+  <sample key="0x64" count="24"/>
+  <sample key="0x53" count="22"/>
+  <sample key="0xd4" count="20"/>
+  <sample key="0x52" count="15"/>
+  <sample key="0x2e" count="12"/>
+  <sample key="0x75" count="12"/>
+  <sample key="0x200001f" count="12"/>
+  <sample key="0x2f" count="12"/>
+  <sample key="0xe0" count="12"/>
+  <sample key="0x186" count="8"/>
+  <sample key="0x1a5" count="7"/>
+  <sample key="0x6e" count="7"/>
+  <sample key="0xd3" count="6"/>
+  <sample key="0x200001b" count="6"/>
+  <sample key="0xd5" count="6"/>
+  <sample key="0x170" count="3"/>
+  <sample key="0x51" count="3"/>
+  <sample key="0x1000019" count="2"/>
+  <sample key="0x252" count="2"/>
+  <sample key="0x1bd" count="2"/>
+  <sample key="0xd2" count="2"/>
+  <sample key="0x62" count="2"/>
+  <sample key="0x277" count="1"/>
+  <sample key="0x21c" count="1"/>
+  <sample key="0x21b" count="1"/>
+  <sample key="0x21f" count="1"/>
+  <sample key="0x219" count="1"/>
+  <sample key="0xa" count="1"/>
+  <sample key="0x200000e" count="1"/>
+  <sample key="0x11b" count="1"/>
+ </function>
+ <function name="_Log" addr="0x6000bb68">
   <sample key="0x200001f" count="102"/>
   <sample key="0x5" count="47"/>
   <sample key="0x52" count="27"/>
@@ -4672,7 +4843,7 @@
   <sample key="0x11b" count="1"/>
   <sample key="0x30" count="1"/>
  </function>
- <function name="_Dscalex" addr="0x6000e518">
+ <function name="_Dscalex" addr="0x6000d7d0">
   <sample key="0x2000020" count="25"/>
   <sample key="0x4b" count="24"/>
   <sample key="0x61" count="24"/>
@@ -4722,7 +4893,7 @@
   <sample key="0x6e" count="1"/>
   <sample key="0x30" count="1"/>
  </function>
- <function name="_Quad" addr="0x6000cd48">
+ <function name="_Quad" addr="0x6000c000">
   <sample key="0x200001f" count="47"/>
   <sample key="0x1000023" count="34"/>
   <sample key="0x5" count="33"/>
@@ -4751,7 +4922,7 @@
   <sample key="0xa" count="1"/>
   <sample key="0x4b" count="1"/>
  </function>
- <function name="_Stoflt" addr="0x6000ff08">
+ <function name="_Stoflt" addr="0x6000f1c0">
   <sample key="0x2000020" count="22"/>
   <sample key="0x100001a" count="20"/>
   <sample key="0x53" count="19"/>
@@ -4799,7 +4970,7 @@
   <sample key="0x5d" count="1"/>
   <sample key="0x5e" count="1"/>
  </function>
- <function name="_Stoxflt" addr="0x60010568">
+ <function name="_Stoxflt" addr="0x6000f820">
   <sample key="0x100001a" count="20"/>
   <sample key="0x2000020" count="20"/>
   <sample key="0x53" count="19"/>
@@ -4849,11 +5020,11 @@
   <sample key="0x5e" count="1"/>
   <sample key="0x2000021" count="1"/>
  </function>
- <function name="run" addr="0x6000bb08">
-  <sample key="0x24" count="48"/>
+ <function name="run" addr="0x6000adbc">
+  <sample key="0x24" count="49"/>
   <sample key="0x186" count="27"/>
   <sample key="0x100001e" count="23"/>
-  <sample key="0x1a5" count="21"/>
+  <sample key="0x1a5" count="22"/>
   <sample key="0x1000019" count="19"/>
   <sample key="0x52" count="16"/>
   <sample key="0x1000023" count="10"/>
@@ -4883,7 +5054,7 @@
   <sample key="0x4d" count="1"/>
   <sample key="0x200000e" count="1"/>
  </function>
- <function name="_Litob" addr="0x60012100">
+ <function name="_Litob" addr="0x600113b8">
   <sample key="0x2000020" count="39"/>
   <sample key="0x100001e" count="22"/>
   <sample key="0x200001f" count="17"/>
@@ -4927,7 +5098,44 @@
   <sample key="0x62" count="1"/>
   <sample key="0x30" count="1"/>
  </function>
- <function name="__muldf3" addr="0x6000d668">
+ <function name="CrossFade_Process" addr="0x60009978">
+  <sample key="0x186" count="42"/>
+  <sample key="0x1a5" count="34"/>
+  <sample key="0x24" count="32"/>
+  <sample key="0x25" count="22"/>
+  <sample key="0x100001e" count="10"/>
+  <sample key="0x52" count="7"/>
+  <sample key="0x1000019" count="4"/>
+  <sample key="0x504047f" count="4"/>
+  <sample key="0x51" count="4"/>
+  <sample key="0x500005e" count="4"/>
+  <sample key="0x170" count="3"/>
+  <sample key="0x21c" count="3"/>
+  <sample key="0x269" count="3"/>
+  <sample key="0x62" count="3"/>
+  <sample key="0x268" count="2"/>
+  <sample key="0x252" count="2"/>
+  <sample key="0x1bd" count="2"/>
+  <sample key="0x4b" count="2"/>
+  <sample key="0xdf" count="2"/>
+  <sample key="0x1000023" count="2"/>
+  <sample key="0x271" count="1"/>
+  <sample key="0x5000278" count="1"/>
+  <sample key="0x21b" count="1"/>
+  <sample key="0x219" count="1"/>
+  <sample key="0x2e" count="1"/>
+  <sample key="0xa" count="1"/>
+  <sample key="0x75" count="1"/>
+  <sample key="0x53" count="1"/>
+  <sample key="0x200001f" count="1"/>
+  <sample key="0x2000020" count="1"/>
+  <sample key="0x504005e" count="1"/>
+  <sample key="0x2f" count="1"/>
+  <sample key="0x200000e" count="1"/>
+  <sample key="0x64" count="1"/>
+  <sample key="0xe0" count="1"/>
+ </function>
+ <function name="__muldf3" addr="0x6000c920">
   <sample key="0x4b" count="36"/>
   <sample key="0x4" count="16"/>
   <sample key="0x3f" count="15"/>
@@ -4965,40 +5173,7 @@
   <sample key="0x2a" count="1"/>
   <sample key="0x30" count="1"/>
  </function>
- <function name="CrossFade_Process" addr="0x6000a6f8">
-  <sample key="0x186" count="41"/>
-  <sample key="0x1a5" count="33"/>
-  <sample key="0x24" count="31"/>
-  <sample key="0x25" count="18"/>
-  <sample key="0x100001e" count="12"/>
-  <sample key="0x52" count="7"/>
-  <sample key="0x1000019" count="4"/>
-  <sample key="0x504047f" count="4"/>
-  <sample key="0x500005e" count="4"/>
-  <sample key="0x21c" count="3"/>
-  <sample key="0x269" count="3"/>
-  <sample key="0x1000023" count="3"/>
-  <sample key="0x268" count="2"/>
-  <sample key="0x4b" count="2"/>
-  <sample key="0x51" count="2"/>
-  <sample key="0xdf" count="2"/>
-  <sample key="0x62" count="2"/>
-  <sample key="0x271" count="1"/>
-  <sample key="0x5000278" count="1"/>
-  <sample key="0x219" count="1"/>
-  <sample key="0x2e" count="1"/>
-  <sample key="0xa" count="1"/>
-  <sample key="0x75" count="1"/>
-  <sample key="0x53" count="1"/>
-  <sample key="0x200001f" count="1"/>
-  <sample key="0x2000020" count="1"/>
-  <sample key="0x504005e" count="1"/>
-  <sample key="0x2f" count="1"/>
-  <sample key="0x200000e" count="1"/>
-  <sample key="0x64" count="1"/>
-  <sample key="0xe0" count="1"/>
- </function>
- <function name="EQSetParam" addr="0x60009db8">
+ <function name="EQSetParam" addr="0x60009038">
   <sample key="0x100001e" count="52"/>
   <sample key="0x1000023" count="23"/>
   <sample key="0x2000020" count="16"/>
@@ -5029,7 +5204,7 @@
   <sample key="0x11b" count="1"/>
   <sample key="0x6e" count="1"/>
  </function>
- <function name="_Stoulx" addr="0x60010368">
+ <function name="_Stoulx" addr="0x6000f620">
   <sample key="0x2000020" count="19"/>
   <sample key="0x53" count="12"/>
   <sample key="0x504005e" count="12"/>
@@ -5072,7 +5247,7 @@
   <sample key="0xa" count="1"/>
   <sample key="0x58" count="1"/>
  </function>
- <function name="__propagateFloat64NaN" addr="0x60013c70">
+ <function name="__propagateFloat64NaN" addr="0x60012f28">
   <sample key="0x2000020" count="18"/>
   <sample key="0x1000023" count="14"/>
   <sample key="0x4b" count="12"/>
@@ -5102,7 +5277,7 @@
   <sample key="0xa" count="1"/>
   <sample key="0x57" count="1"/>
  </function>
- <function name="_Stodx" addr="0x6000fd48">
+ <function name="_Stodx" addr="0x6000f000">
   <sample key="0x200001f" count="30"/>
   <sample key="0x1000023" count="20"/>
   <sample key="0x100001e" count="16"/>
@@ -5132,7 +5307,7 @@
   <sample key="0xa" count="1"/>
   <sample key="0x30" count="1"/>
  </function>
- <function name="_Puttxt" addr="0x6000fb80">
+ <function name="_Puttxt" addr="0x6000ee38">
   <sample key="0x100001e" count="44"/>
   <sample key="0x1000023" count="17"/>
   <sample key="0x2a" count="16"/>
@@ -5155,7 +5330,7 @@
   <sample key="0xa" count="1"/>
   <sample key="0x504005e" count="1"/>
  </function>
- <function name="_Tan" addr="0x6000cbb0">
+ <function name="_Tan" addr="0x6000be68">
   <sample key="0x200001f" count="35"/>
   <sample key="0x5" count="27"/>
   <sample key="0x100001e" count="26"/>
@@ -5182,7 +5357,7 @@
   <sample key="0x5d" count="1"/>
   <sample key="0x62" count="1"/>
  </function>
- <function name="_Dtentox" addr="0x600118a8">
+ <function name="_Dtentox" addr="0x60010b60">
   <sample key="0x200001f" count="28"/>
   <sample key="0x5" count="16"/>
   <sample key="0x100001e" count="16"/>
@@ -5214,7 +5389,7 @@
   <sample key="0x6f" count="1"/>
   <sample key="0x70" count="1"/>
  </function>
- <function name="_Stopfx" addr="0x600101b0">
+ <function name="_Stopfx" addr="0x6000f468">
   <sample key="0x53" count="19"/>
   <sample key="0x2000020" count="19"/>
   <sample key="0x3d" count="16"/>
@@ -5244,7 +5419,7 @@
   <sample key="0x44" count="1"/>
   <sample key="0xa" count="1"/>
  </function>
- <function name="EQInit" addr="0x60009c48">
+ <function name="EQInit" addr="0x60008ec8">
   <sample key="0x100001e" count="42"/>
   <sample key="0x2000020" count="30"/>
   <sample key="0x1000023" count="29"/>
@@ -5269,7 +5444,7 @@
   <sample key="0x200000e" count="1"/>
   <sample key="0x6e" count="1"/>
  </function>
- <function name="_Mbtowcx" addr="0x60012640">
+ <function name="_Mbtowcx" addr="0x600118f8">
   <sample key="0x2000020" count="14"/>
   <sample key="0x100001a" count="11"/>
   <sample key="0x61" count="11"/>
@@ -5305,7 +5480,7 @@
   <sample key="0x54" count="1"/>
   <sample key="0x200001f" count="1"/>
  </function>
- <function name="_LXp_mulh" addr="0x60012430">
+ <function name="_LXp_mulh" addr="0x600116e8">
   <sample key="0x100001e" count="23"/>
   <sample key="0x1000023" count="19"/>
   <sample key="0x200001f" count="15"/>
@@ -5336,7 +5511,7 @@
   <sample key="0xa" count="1"/>
   <sample key="0x50" count="1"/>
  </function>
- <function name="_Xp_mulh" addr="0x60011028">
+ <function name="_Xp_mulh" addr="0x600102e0">
   <sample key="0x100001e" count="23"/>
   <sample key="0x1000023" count="19"/>
   <sample key="0x200001f" count="15"/>
@@ -5367,7 +5542,7 @@
   <sample key="0xa" count="1"/>
   <sample key="0x50" count="1"/>
  </function>
- <function name="fmod" addr="0x6000d0f8">
+ <function name="fmod" addr="0x6000c3b0">
   <sample key="0x5" count="16"/>
   <sample key="0x100001e" count="16"/>
   <sample key="0x200001f" count="13"/>
@@ -5397,7 +5572,7 @@
   <sample key="0x5d" count="1"/>
   <sample key="0x2a" count="1"/>
  </function>
- <function name="__subdf3" addr="0x6000d3fc">
+ <function name="__subdf3" addr="0x6000c6b4">
   <sample key="0x6e" count="12"/>
   <sample key="0x100001a" count="11"/>
   <sample key="0x6b" count="9"/>
@@ -5436,7 +5611,7 @@
   <sample key="0xa" count="1"/>
   <sample key="0x52" count="1"/>
  </function>
- <function name="_Wctombx" addr="0x60010948">
+ <function name="_Wctombx" addr="0x6000fc00">
   <sample key="0x4b" count="11"/>
   <sample key="0x100001e" count="8"/>
   <sample key="0x45" count="7"/>
@@ -5480,7 +5655,7 @@
   <sample key="0x62" count="1"/>
   <sample key="0x6f" count="1"/>
  </function>
- <function name="__roundAndPackFloat64" addr="0x60013e5c">
+ <function name="__roundAndPackFloat64" addr="0x60013114">
   <sample key="0x2000020" count="17"/>
   <sample key="0x2f" count="13"/>
   <sample key="0x1000019" count="7"/>
@@ -5519,7 +5694,7 @@
   <sample key="0x68" count="1"/>
   <sample key="0x30" count="1"/>
  </function>
- <function name="_Quadph" addr="0x6000cfdc">
+ <function name="_Quadph" addr="0x6000c294">
   <sample key="0x200001f" count="29"/>
   <sample key="0x5" count="18"/>
   <sample key="0x52" count="14"/>
@@ -5538,7 +5713,7 @@
   <sample key="0xa" count="1"/>
   <sample key="0x4b" count="1"/>
  </function>
- <function name="_Foprep" addr="0x6000e9d0">
+ <function name="_Foprep" addr="0x6000dc88">
   <sample key="0x2000020" count="12"/>
   <sample key="0x1000023" count="12"/>
   <sample key="0x2f" count="9"/>
@@ -5568,7 +5743,7 @@
   <sample key="0x4f" count="1"/>
   <sample key="0x62" count="1"/>
  </function>
- <function name="__adddf3" addr="0x6000d2a0">
+ <function name="__adddf3" addr="0x6000c558">
   <sample key="0x6e" count="9"/>
   <sample key="0x100001a" count="8"/>
   <sample key="0x200000e" count="7"/>
@@ -5604,7 +5779,7 @@
   <sample key="0x69" count="1"/>
   <sample key="0x30" count="1"/>
  </function>
- <function name="__divdf3" addr="0x6000d9b0">
+ <function name="__divdf3" addr="0x6000cc68">
   <sample key="0x100001a" count="9"/>
   <sample key="0x6e" count="7"/>
   <sample key="0x4d" count="6"/>
@@ -5641,7 +5816,7 @@
   <sample key="0x68" count="1"/>
   <sample key="0x30" count="1"/>
  </function>
- <function name="_Xp_getw" addr="0x60010f38">
+ <function name="_Xp_getw" addr="0x600101f0">
   <sample key="0x200001f" count="31"/>
   <sample key="0x100001e" count="14"/>
   <sample key="0x5" count="11"/>
@@ -5658,7 +5833,7 @@
   <sample key="0xa" count="1"/>
   <sample key="0x4d" count="1"/>
  </function>
- <function name="memcpy" addr="0x60014248">
+ <function name="memcpy" addr="0x60013500">
   <sample key="0x100001e" count="15"/>
   <sample key="0x1000023" count="14"/>
   <sample key="0x100001a" count="12"/>
@@ -5684,7 +5859,7 @@
   <sample key="0x66" count="1"/>
   <sample key="0x2a" count="1"/>
  </function>
- <function name="malloc" addr="0x6000e1c8">
+ <function name="malloc" addr="0x6000d480">
   <sample key="0x100001e" count="21"/>
   <sample key="0x57" count="8"/>
   <sample key="0x45" count="6"/>
@@ -5717,7 +5892,7 @@
   <sample key="0x70" count="1"/>
   <sample key="0x2a" count="1"/>
  </function>
- <function name="_Putstr" addr="0x6000fa70">
+ <function name="_Putstr" addr="0x6000ed28">
   <sample key="0x2f" count="8"/>
   <sample key="0x5" count="7"/>
   <sample key="0x4f" count="6"/>
@@ -5754,7 +5929,7 @@
   <sample key="0x200000e" count="1"/>
   <sample key="0x2a" count="1"/>
  </function>
- <function name="_xtos_l1int_handler" addr="0x600130cc">
+ <function name="_xtos_l1int_handler" addr="0x60012384">
   <sample key="0x52" count="11"/>
   <sample key="0x1000023" count="10"/>
   <sample key="0x100001e" count="9"/>
@@ -5793,7 +5968,7 @@
   <sample key="0x82" count="1"/>
   <sample key="0x8d" count="1"/>
  </function>
- <function name="fwrite" addr="0x6000e0c8">
+ <function name="fwrite" addr="0x6000d380">
   <sample key="0x2f" count="12"/>
   <sample key="0x5" count="9"/>
   <sample key="0x200001f" count="8"/>
@@ -5822,7 +5997,7 @@
   <sample key="0x5e" count="1"/>
   <sample key="0xd" count="1"/>
  </function>
- <function name="_Dnorm" addr="0x600117a0">
+ <function name="_Dnorm" addr="0x60010a58">
   <sample key="0x4f" count="16"/>
   <sample key="0x61" count="15"/>
   <sample key="0x2f" count="9"/>
@@ -5846,7 +6021,7 @@
   <sample key="0x52" count="1"/>
   <sample key="0x57" count="1"/>
  </function>
- <function name="_Dint" addr="0x6000e418">
+ <function name="_Dint" addr="0x6000d6d0">
   <sample key="0x4f" count="13"/>
   <sample key="0x2000020" count="9"/>
   <sample key="0x61" count="9"/>
@@ -5878,7 +6053,7 @@
   <sample key="0x2a" count="1"/>
   <sample key="0x30" count="1"/>
  </function>
- <function name="__divdf3_aux" addr="0x6000d8c0">
+ <function name="__divdf3_aux" addr="0x6000cb78">
   <sample key="0x2000020" count="8"/>
   <sample key="0x2f" count="8"/>
   <sample key="0x6e" count="8"/>
@@ -5903,7 +6078,7 @@
   <sample key="0x41" count="1"/>
   <sample key="0x30" count="1"/>
  </function>
- <function name="_LXp_setw" addr="0x60012358">
+ <function name="_LXp_setw" addr="0x60011610">
   <sample key="0x1000023" count="18"/>
   <sample key="0x100001e" count="12"/>
   <sample key="0x5" count="10"/>
@@ -5924,7 +6099,7 @@
   <sample key="0x57" count="1"/>
   <sample key="0x504005e" count="1"/>
  </function>
- <function name="_Xp_setw" addr="0x60011188">
+ <function name="_Xp_setw" addr="0x60010440">
   <sample key="0x1000023" count="18"/>
   <sample key="0x100001e" count="12"/>
   <sample key="0x5" count="10"/>
@@ -5980,7 +6155,7 @@
   <sample key="0x14" count="1"/>
   <sample key="0x17" count="1"/>
  </function>
- <function name="fgets" addr="0x6000de78">
+ <function name="fgets" addr="0x6000d130">
   <sample key="0x100001e" count="7"/>
   <sample key="0x2f" count="7"/>
   <sample key="0x5" count="6"/>
@@ -6014,7 +6189,7 @@
   <sample key="0x58" count="1"/>
   <sample key="0xd" count="1"/>
  </function>
- <function name="_Fwprep" addr="0x6000ebd0">
+ <function name="_Fwprep" addr="0x6000de88">
   <sample key="0x100001e" count="8"/>
   <sample key="0x62" count="7"/>
   <sample key="0x1000023" count="7"/>
@@ -6044,7 +6219,7 @@
   <sample key="0x504005e" count="1"/>
   <sample key="0x11b" count="1"/>
  </function>
- <function name="__muldf3_aux" addr="0x6000d584">
+ <function name="__muldf3_aux" addr="0x6000c83c">
   <sample key="0x4d" count="9"/>
   <sample key="0x6e" count="8"/>
   <sample key="0x2000020" count="7"/>
@@ -6068,7 +6243,7 @@
   <sample key="0x52" count="1"/>
   <sample key="0x69" count="1"/>
  </function>
- <function name="_Frprep" addr="0x6000eb08">
+ <function name="_Frprep" addr="0x6000ddc0">
   <sample key="0x2000020" count="7"/>
   <sample key="0x2f" count="6"/>
   <sample key="0x200000e" count="6"/>
@@ -6099,7 +6274,7 @@
   <sample key="0x5a" count="1"/>
   <sample key="0x2a" count="1"/>
  </function>
- <function name="fputs" addr="0x60011638">
+ <function name="fputs" addr="0x600108f0">
   <sample key="0x5" count="11"/>
   <sample key="0x2f" count="9"/>
   <sample key="0x200001f" count="6"/>
@@ -6127,7 +6302,7 @@
   <sample key="0x200000e" count="1"/>
   <sample key="0x62" count="1"/>
  </function>
- <function name="_LXp_mulx" addr="0x60012590">
+ <function name="_LXp_mulx" addr="0x60011848">
   <sample key="0x200001f" count="16"/>
   <sample key="0x100001e" count="14"/>
   <sample key="0x5" count="10"/>
@@ -6146,7 +6321,7 @@
   <sample key="0x4d" count="1"/>
   <sample key="0x62" count="1"/>
  </function>
- <function name="_start" addr="0x60001948">
+ <function name="_start" addr="0x60001944">
   <sample key="0x52" count="15"/>
   <sample key="0x200001b" count="6"/>
   <sample key="0x6" count="5"/>
@@ -6173,7 +6348,7 @@
   <sample key="0x70" count="1"/>
   <sample key="0x8c" count="1"/>
  </function>
- <function name="fread" addr="0x6000df78">
+ <function name="fread" addr="0x6000d230">
   <sample key="0x100001e" count="8"/>
   <sample key="0x200001f" count="7"/>
   <sample key="0x5" count="6"/>
@@ -6201,7 +6376,7 @@
   <sample key="0x118" count="1"/>
   <sample key="0x64" count="1"/>
  </function>
- <function name="free" addr="0x6000e020">
+ <function name="free" addr="0x6000d2d8">
   <sample key="0x100001e" count="10"/>
   <sample key="0x1000023" count="8"/>
   <sample key="0x1000019" count="5"/>
@@ -6225,7 +6400,7 @@
   <sample key="0x52" count="1"/>
   <sample key="0x2f" count="1"/>
  </function>
- <function name="fflush" addr="0x6000ddc8">
+ <function name="fflush" addr="0x6000d080">
   <sample key="0x5" count="8"/>
   <sample key="0x51" count="5"/>
   <sample key="0x57" count="5"/>
@@ -6257,21 +6432,7 @@
   <sample key="0x11b" count="1"/>
   <sample key="0x2a" count="1"/>
  </function>
- <function name="F32x2InterpolL" addr="0x60001a60">
-  <sample key="0x186" count="15"/>
-  <sample key="0x1a5" count="14"/>
-  <sample key="0x52" count="8"/>
-  <sample key="0x1000019" count="7"/>
-  <sample key="0x24" count="6"/>
-  <sample key="0x504047f" count="2"/>
-  <sample key="0x500005e" count="2"/>
-  <sample key="0x268" count="1"/>
-  <sample key="0x21c" count="1"/>
-  <sample key="0x269" count="1"/>
-  <sample key="0xa" count="1"/>
-  <sample key="0x200000e" count="1"/>
- </function>
- <function name="__estimateSqrt32" addr="0x60014020">
+ <function name="__estimateSqrt32" addr="0x600132d8">
   <sample key="0x52" count="9"/>
   <sample key="0x2000020" count="7"/>
   <sample key="0x1000019" count="6"/>
@@ -6294,7 +6455,7 @@
   <sample key="0x6a" count="1"/>
   <sample key="0x67" count="1"/>
  </function>
- <function name="_Atrealloc" addr="0x600114b0">
+ <function name="_Atrealloc" addr="0x60010768">
   <sample key="0x100001e" count="10"/>
   <sample key="0x52" count="6"/>
   <sample key="0x1000019" count="5"/>
@@ -6315,7 +6476,7 @@
   <sample key="0x70" count="1"/>
   <sample key="0x2a" count="1"/>
  </function>
- <function name="fclose" addr="0x6000dd38">
+ <function name="fclose" addr="0x6000cff0">
   <sample key="0x5" count="11"/>
   <sample key="0x57" count="5"/>
   <sample key="0x2f" count="5"/>
@@ -6338,7 +6499,7 @@
   <sample key="0x62" count="1"/>
   <sample key="0x11b" count="1"/>
  </function>
- <function name="__umulsidi3" addr="0x60014620">
+ <function name="__umulsidi3" addr="0x600138d8">
   <sample key="0x4b" count="12"/>
   <sample key="0x200001f" count="5"/>
   <sample key="0x4" count="4"/>
@@ -6363,7 +6524,7 @@
   <sample key="0x70" count="1"/>
   <sample key="0x69" count="1"/>
  </function>
- <function name="_Dunscale" addr="0x6000e878">
+ <function name="_Dunscale" addr="0x6000db30">
   <sample key="0x4f" count="6"/>
   <sample key="0x61" count="6"/>
   <sample key="0x2000020" count="5"/>
@@ -6382,7 +6543,7 @@
   <sample key="0xa" count="1"/>
   <sample key="0xd" count="1"/>
  </function>
- <function name="__estimateDiv64To32" addr="0x60013fa0">
+ <function name="__estimateDiv64To32" addr="0x60013258">
   <sample key="0x2000020" count="5"/>
   <sample key="0x100001a" count="4"/>
   <sample key="0x6e" count="4"/>
@@ -6404,7 +6565,7 @@
   <sample key="0xab" count="1"/>
   <sample key="0x67" count="1"/>
  </function>
- <function name="_Logpoly" addr="0x6000cb48">
+ <function name="_Logpoly" addr="0x6000be00">
   <sample key="0x5" count="12"/>
   <sample key="0x100001e" count="12"/>
   <sample key="0x200001f" count="12"/>
@@ -6414,7 +6575,7 @@
   <sample key="0x52" count="1"/>
   <sample key="0x200000e" count="1"/>
  </function>
- <function name="__mulsi3" addr="0x600144f0">
+ <function name="__mulsi3" addr="0x600137a8">
   <sample key="0x4b" count="8"/>
   <sample key="0x5b" count="8"/>
   <sample key="0x5a" count="3"/>
@@ -6435,7 +6596,7 @@
   <sample key="0x2a" count="1"/>
   <sample key="0x30" count="1"/>
  </function>
- <function name="_xtos_syscall_handler" addr="0x600131c8">
+ <function name="_xtos_syscall_handler" addr="0x60012480">
   <sample key="0x100001e" count="5"/>
   <sample key="0x2000020" count="3"/>
   <sample key="0x62" count="3"/>
@@ -6461,7 +6622,7 @@
   <sample key="0x8b" count="1"/>
   <sample key="0x7c" count="1"/>
  </function>
- <function name="exit" addr="0x60011380">
+ <function name="exit" addr="0x60010638">
   <sample key="0x100001e" count="11"/>
   <sample key="0x200001b" count="3"/>
   <sample key="0x8" count="3"/>
@@ -6483,7 +6644,7 @@
   <sample key="0x2000020" count="1"/>
   <sample key="0x5e" count="1"/>
  </function>
- <function name="fputc" addr="0x600115c8">
+ <function name="fputc" addr="0x60010880">
   <sample key="0x5" count="6"/>
   <sample key="0x2f" count="6"/>
   <sample key="0x4b" count="2"/>
@@ -6507,7 +6668,7 @@
   <sample key="0x1000023" count="1"/>
   <sample key="0x64" count="1"/>
  </function>
- <function name="strlen" addr="0x60011400">
+ <function name="strlen" addr="0x600106b8">
   <sample key="0x100001a" count="7"/>
   <sample key="0x44" count="5"/>
   <sample key="0x200000e" count="4"/>
@@ -6526,7 +6687,7 @@
   <sample key="0x57" count="1"/>
   <sample key="0x2000020" count="1"/>
  </function>
- <function name="__divsi3" addr="0x60014570">
+ <function name="__divsi3" addr="0x60013828">
   <sample key="0x41" count="4"/>
   <sample key="0x2000020" count="4"/>
   <sample key="0x200000e" count="4"/>
@@ -6548,7 +6709,7 @@
   <sample key="0x67" count="1"/>
   <sample key="0x30" count="1"/>
  </function>
- <function name="__ledf2" addr="0x6000db30">
+ <function name="__ledf2" addr="0x6000cde8">
   <sample key="0x2000020" count="6"/>
   <sample key="0x2f" count="5"/>
   <sample key="0x200000e" count="5"/>
@@ -6566,7 +6727,7 @@
   <sample key="0x58" count="1"/>
   <sample key="0x30" count="1"/>
  </function>
- <function name="__ltdf2" addr="0x6000dbbc">
+ <function name="__ltdf2" addr="0x6000ce74">
   <sample key="0x2000020" count="6"/>
   <sample key="0x2f" count="5"/>
   <sample key="0x200000e" count="5"/>
@@ -6585,7 +6746,7 @@
   <sample key="0x5b" count="1"/>
   <sample key="0x30" count="1"/>
  </function>
- <function name="__fixunsdfsi" addr="0x6000dc98">
+ <function name="__fixunsdfsi" addr="0x6000cf50">
   <sample key="0x200000e" count="6"/>
   <sample key="0x2000020" count="3"/>
   <sample key="0x6e" count="3"/>
@@ -6608,7 +6769,7 @@
   <sample key="0x67" count="1"/>
   <sample key="0x2a" count="1"/>
  </function>
- <function name="_LXp_addx" addr="0x60012fc0">
+ <function name="_LXp_addx" addr="0x60012278">
   <sample key="0x200001f" count="5"/>
   <sample key="0x51" count="4"/>
   <sample key="0x100001e" count="4"/>
@@ -6625,7 +6786,7 @@
   <sample key="0x4d" count="1"/>
   <sample key="0x200000e" count="1"/>
  </function>
- <function name="_Xp_addx" addr="0x60010ee0">
+ <function name="_Xp_addx" addr="0x60010198">
   <sample key="0x200001f" count="5"/>
   <sample key="0x51" count="4"/>
   <sample key="0x100001e" count="4"/>
@@ -6642,7 +6803,7 @@
   <sample key="0x4d" count="1"/>
   <sample key="0x200000e" count="1"/>
  </function>
- <function name="_Fopen" addr="0x60011a58">
+ <function name="_Fopen" addr="0x60010d10">
   <sample key="0x2f" count="6"/>
   <sample key="0x4b" count="5"/>
   <sample key="0x57" count="4"/>
@@ -6659,7 +6820,7 @@
   <sample key="0x200000e" count="1"/>
   <sample key="0x11b" count="1"/>
  </function>
- <function name="_Dtest" addr="0x6000e810">
+ <function name="_Dtest" addr="0x6000dac8">
   <sample key="0x4f" count="7"/>
   <sample key="0x2000020" count="5"/>
   <sample key="0x200000e" count="4"/>
@@ -6674,7 +6835,7 @@
   <sample key="0x4b" count="1"/>
   <sample key="0x58" count="1"/>
  </function>
- <function name="_Atexit" addr="0x6000e3c8">
+ <function name="_Atexit" addr="0x6000d680">
   <sample key="0x52" count="6"/>
   <sample key="0x1000023" count="6"/>
   <sample key="0x100001e" count="5"/>
@@ -6687,7 +6848,7 @@
   <sample key="0x41" count="1"/>
   <sample key="0xa" count="1"/>
  </function>
- <function name="printf" addr="0x6000e2f0">
+ <function name="printf" addr="0x6000d5a8">
   <sample key="0x1000023" count="9"/>
   <sample key="0x100001e" count="4"/>
   <sample key="0x200001f" count="4"/>
@@ -6699,7 +6860,7 @@
   <sample key="0x200000e" count="1"/>
   <sample key="0x62" count="1"/>
  </function>
- <function name="_Fofree" addr="0x6000e980">
+ <function name="_Fofree" addr="0x6000dc38">
   <sample key="0x1000023" count="9"/>
   <sample key="0x24" count="3"/>
   <sample key="0x2000020" count="2"/>
@@ -6719,7 +6880,7 @@
   <sample key="0x61" count="1"/>
   <sample key="0x64" count="1"/>
  </function>
- <function name="exp" addr="0x6000bd90">
+ <function name="exp" addr="0x6000b048">
   <sample key="0x200001f" count="4"/>
   <sample key="0x2000020" count="4"/>
   <sample key="0x200000e" count="4"/>
@@ -6735,7 +6896,7 @@
   <sample key="0x52" count="1"/>
   <sample key="0x2f" count="1"/>
  </function>
- <function name="memset" addr="0x600143e4">
+ <function name="memset" addr="0x6001369c">
   <sample key="0x1000023" count="7"/>
   <sample key="0x35" count="4"/>
   <sample key="0x100001a" count="3"/>
@@ -6752,7 +6913,7 @@
   <sample key="0x64" count="1"/>
   <sample key="0x70" count="1"/>
  </function>
- <function name="_Fofind" addr="0x6000e938">
+ <function name="_Fofind" addr="0x6000dbf0">
   <sample key="0x200000e" count="4"/>
   <sample key="0x57" count="3"/>
   <sample key="0x2000020" count="3"/>
@@ -6770,7 +6931,7 @@
   <sample key="0x1000023" count="1"/>
   <sample key="0x64" count="1"/>
  </function>
- <function name="_Fail_s" addr="0x60011288">
+ <function name="_Fail_s" addr="0x60010540">
   <sample key="0x2f" count="5"/>
   <sample key="0x5" count="3"/>
   <sample key="0x52" count="3"/>
@@ -6787,7 +6948,7 @@
   <sample key="0xd" count="1"/>
   <sample key="0x200000e" count="1"/>
  </function>
- <function name="__fixdfsi" addr="0x6000dc4c">
+ <function name="__fixdfsi" addr="0x6000cf04">
   <sample key="0x200000e" count="3"/>
   <sample key="0x4b" count="2"/>
   <sample key="0x59" count="2"/>
@@ -6810,7 +6971,7 @@
   <sample key="0x67" count="1"/>
   <sample key="0x2a" count="1"/>
  </function>
- <function name="__udivsi3" addr="0x600140e0">
+ <function name="__udivsi3" addr="0x60013398">
   <sample key="0x200000e" count="4"/>
   <sample key="0x41" count="3"/>
   <sample key="0x100001a" count="2"/>
@@ -6830,7 +6991,7 @@
   <sample key="0x70" count="1"/>
   <sample key="0x67" count="1"/>
  </function>
- <function name="atexit" addr="0x6001153c">
+ <function name="atexit" addr="0x600107f4">
   <sample key="0x52" count="4"/>
   <sample key="0x5" count="3"/>
   <sample key="0x100001e" count="3"/>
@@ -6864,7 +7025,7 @@
   <sample key="0x1000023" count="1"/>
   <sample key="0x64" count="1"/>
  </function>
- <function name="__modsi3" addr="0x600145d8">
+ <function name="__modsi3" addr="0x60013890">
   <sample key="0x2a" count="3"/>
   <sample key="0x5c" count="2"/>
   <sample key="0x41" count="2"/>
@@ -6884,7 +7045,7 @@
   <sample key="0x70" count="1"/>
   <sample key="0x67" count="1"/>
  </function>
- <function name="_sbrk_r" addr="0x60013090">
+ <function name="_sbrk_r" addr="0x60012348">
   <sample key="0x52" count="5"/>
   <sample key="0x3f" count="3"/>
   <sample key="0x100001e" count="3"/>
@@ -6897,7 +7058,7 @@
   <sample key="0xa" count="1"/>
   <sample key="0x58" count="1"/>
  </function>
- <function name="_Initlocks" addr="0x6001083c">
+ <function name="_Initlocks" addr="0x6000faf4">
   <sample key="0x52" count="4"/>
   <sample key="0x5" count="3"/>
   <sample key="0x24" count="2"/>
@@ -6912,7 +7073,7 @@
   <sample key="0x2f" count="1"/>
   <sample key="0x200000e" count="1"/>
  </function>
- <function name="_Wctomb" addr="0x60010ab4">
+ <function name="_Wctomb" addr="0x6000fd6c">
   <sample key="0x200001f" count="5"/>
   <sample key="0x52" count="4"/>
   <sample key="0x200001b" count="3"/>
@@ -6925,7 +7086,7 @@
   <sample key="0x4d" count="1"/>
   <sample key="0x200000e" count="1"/>
  </function>
- <function name="__muldi3" addr="0x60013238">
+ <function name="__muldi3" addr="0x600124f0">
   <sample key="0x1000023" count="6"/>
   <sample key="0x100001e" count="4"/>
   <sample key="0x200001f" count="4"/>
@@ -6936,7 +7097,7 @@
   <sample key="0x200000e" count="1"/>
   <sample key="0x62" count="1"/>
  </function>
- <function name="feraiseexcept" addr="0x60011588">
+ <function name="feraiseexcept" addr="0x60010840">
   <sample key="0x2000020" count="3"/>
   <sample key="0x200001b" count="2"/>
   <sample key="0x4f" count="2"/>
@@ -6955,7 +7116,7 @@
   <sample key="0x61" count="1"/>
   <sample key="0x30" count="1"/>
  </function>
- <function name="__memcpy_aux" addr="0x60014208">
+ <function name="__memcpy_aux" addr="0x600134c0">
   <sample key="0x100001a" count="7"/>
   <sample key="0x53" count="4"/>
   <sample key="0x64" count="4"/>
@@ -6966,7 +7127,7 @@
   <sample key="0x56" count="1"/>
   <sample key="0x200000e" count="1"/>
  </function>
- <function name="system" addr="0x6000e380">
+ <function name="system" addr="0x6000d638">
   <sample key="0x5" count="5"/>
   <sample key="0x57" count="4"/>
   <sample key="0x52" count="3"/>
@@ -6979,7 +7140,7 @@
   <sample key="0x2000020" count="1"/>
   <sample key="0xd" count="1"/>
  </function>
- <function name="_Feraise" addr="0x6000e900">
+ <function name="_Feraise" addr="0x6000dbb8">
   <sample key="0x2000020" count="3"/>
   <sample key="0x200000e" count="3"/>
   <sample key="0x100001e" count="2"/>
@@ -6994,7 +7155,7 @@
   <sample key="0x52" count="1"/>
   <sample key="0x5b" count="1"/>
  </function>
- <function name="_Clearlocks" addr="0x60010800">
+ <function name="_Clearlocks" addr="0x6000fab8">
   <sample key="0x24" count="3"/>
   <sample key="0x52" count="3"/>
   <sample key="0x43" count="2"/>
@@ -7009,7 +7170,7 @@
   <sample key="0x2f" count="1"/>
   <sample key="0x200000e" count="1"/>
  </function>
- <function name="raise" addr="0x60011720">
+ <function name="raise" addr="0x600109d8">
   <sample key="0x5" count="3"/>
   <sample key="0x2000020" count="3"/>
   <sample key="0x2f" count="3"/>
@@ -7022,7 +7183,7 @@
   <sample key="0x200001f" count="1"/>
   <sample key="0x5e" count="1"/>
  </function>
- <function name="__eqdf2" addr="0x6000dad4">
+ <function name="__eqdf2" addr="0x6000cd8c">
   <sample key="0x2000020" count="4"/>
   <sample key="0x2f" count="3"/>
   <sample key="0x200000e" count="3"/>
@@ -7034,7 +7195,7 @@
   <sample key="0x52" count="1"/>
   <sample key="0x5b" count="1"/>
  </function>
- <function name="__mul_mulsi3" addr="0x6000d888">
+ <function name="__mul_mulsi3" addr="0x6000cb40">
   <sample key="0x4b" count="4"/>
   <sample key="0x5b" count="4"/>
   <sample key="0x1000019" count="1"/>
@@ -7049,7 +7210,7 @@
   <sample key="0x6e" count="1"/>
   <sample key="0x70" count="1"/>
  </function>
- <function name="__umodsi3" addr="0x60014130">
+ <function name="__umodsi3" addr="0x600133e8">
   <sample key="0x2a" count="3"/>
   <sample key="0x41" count="2"/>
   <sample key="0x11a" count="2"/>
@@ -7065,7 +7226,7 @@
   <sample key="0x70" count="1"/>
   <sample key="0x67" count="1"/>
  </function>
- <function name="calloc" addr="0x60011478">
+ <function name="calloc" addr="0x60010730">
   <sample key="0x5" count="4"/>
   <sample key="0x200001f" count="4"/>
   <sample key="0x57" count="2"/>
@@ -7077,7 +7238,7 @@
   <sample key="0xa" count="1"/>
   <sample key="0x2000020" count="1"/>
  </function>
- <function name="__floatsidf" addr="0x60014178">
+ <function name="__floatsidf" addr="0x60013430">
   <sample key="0x6e" count="3"/>
   <sample key="0x200000e" count="2"/>
   <sample key="0x5c" count="1"/>
@@ -7094,7 +7255,7 @@
   <sample key="0x67" count="1"/>
   <sample key="0x2a" count="1"/>
  </function>
- <function name="ringBuffAddValue" addr="0x6000348c">
+ <function name="ringBuffAddValue" addr="0x600073f4">
   <sample key="0x100001e" count="4"/>
   <sample key="0x4b" count="2"/>
   <sample key="0x4f" count="2"/>
@@ -7109,7 +7270,7 @@
   <sample key="0x61" count="1"/>
   <sample key="0x1000023" count="1"/>
  </function>
- <function name="strnlen_s" addr="0x60014388">
+ <function name="strnlen_s" addr="0x60013640">
   <sample key="0x200001b" count="5"/>
   <sample key="0x100001a" count="2"/>
   <sample key="0x53" count="2"/>
@@ -7122,7 +7283,7 @@
   <sample key="0x5e" count="1"/>
   <sample key="0x2a" count="1"/>
  </function>
- <function name="_Lockfilelock" addr="0x60010878">
+ <function name="_Lockfilelock" addr="0x6000fb30">
   <sample key="0x200001b" count="2"/>
   <sample key="0x5" count="2"/>
   <sample key="0x52" count="2"/>
@@ -7136,7 +7297,7 @@
   <sample key="0x2000020" count="1"/>
   <sample key="0x64" count="1"/>
  </function>
- <function name="_Getmem" addr="0x6000eca8">
+ <function name="_Getmem" addr="0x6000df60">
   <sample key="0x200000e" count="3"/>
   <sample key="0x5" count="2"/>
   <sample key="0x24" count="1"/>
@@ -7151,7 +7312,7 @@
   <sample key="0x2f" count="1"/>
   <sample key="0x2a" count="1"/>
  </function>
- <function name="__adddf3_aux" addr="0x6000d270">
+ <function name="__adddf3_aux" addr="0x6000c528">
   <sample key="0x2f" count="3"/>
   <sample key="0x6e" count="3"/>
   <sample key="0x200001f" count="2"/>
@@ -7163,7 +7324,7 @@
   <sample key="0x52" count="1"/>
   <sample key="0x30" count="1"/>
  </function>
- <function name="__unorddf2" addr="0x6000dc20">
+ <function name="__unorddf2" addr="0x6000ced8">
   <sample key="0x2000020" count="3"/>
   <sample key="0x200000e" count="3"/>
   <sample key="0x39" count="2"/>
@@ -7173,7 +7334,7 @@
   <sample key="0xa" count="1"/>
   <sample key="0x52" count="1"/>
  </function>
- <function name="signal" addr="0x60011758">
+ <function name="signal" addr="0x60010a10">
   <sample key="0x5" count="2"/>
   <sample key="0x57" count="2"/>
   <sample key="0x2000020" count="2"/>
@@ -7187,7 +7348,7 @@
   <sample key="0x52" count="1"/>
   <sample key="0x1000023" count="1"/>
  </function>
- <function name="_Locksyslock" addr="0x600108d0">
+ <function name="_Locksyslock" addr="0x6000fb88">
   <sample key="0x5" count="2"/>
   <sample key="0x52" count="2"/>
   <sample key="0x200000e" count="2"/>
@@ -7210,7 +7371,7 @@
   <sample key="0x11" count="13"/>
   <sample key="0x10" count="1"/>
  </function>
- <function name="__gedf2" addr="0x6000db94">
+ <function name="__gedf2" addr="0x6000ce4c">
   <sample key="0x2000020" count="2"/>
   <sample key="0x2f" count="2"/>
   <sample key="0x200000e" count="2"/>
@@ -7222,7 +7383,7 @@
   <sample key="0xa" count="1"/>
   <sample key="0x52" count="1"/>
  </function>
- <function name="__gtdf2" addr="0x6000db08">
+ <function name="__gtdf2" addr="0x6000cdc0">
   <sample key="0x2000020" count="2"/>
   <sample key="0x2f" count="2"/>
   <sample key="0x200000e" count="2"/>
@@ -7234,7 +7395,7 @@
   <sample key="0xa" count="1"/>
   <sample key="0x52" count="1"/>
  </function>
- <function name="__memset_aux" addr="0x600143b8">
+ <function name="__memset_aux" addr="0x60013670">
   <sample key="0x100001a" count="4"/>
   <sample key="0x38" count="2"/>
   <sample key="0x64" count="2"/>
@@ -7245,7 +7406,7 @@
   <sample key="0x200000e" count="1"/>
   <sample key="0x61" count="1"/>
  </function>
- <function name="__subdf3_aux" addr="0x6000d3d1">
+ <function name="__subdf3_aux" addr="0x6000c689">
   <sample key="0x6e" count="3"/>
   <sample key="0x2f" count="2"/>
   <sample key="0x200000e" count="2"/>
@@ -7256,7 +7417,7 @@
   <sample key="0x52" count="1"/>
   <sample key="0x200001f" count="1"/>
  </function>
- <function name="closeall" addr="0x6000dcf8">
+ <function name="closeall" addr="0x6000cfb0">
   <sample key="0x24" count="1"/>
   <sample key="0x100001a" count="1"/>
   <sample key="0x36" count="1"/>
@@ -7272,7 +7433,7 @@
   <sample key="0x2000020" count="1"/>
   <sample key="0x200000e" count="1"/>
  </function>
- <function name="fopen" addr="0x6000df50">
+ <function name="fopen" addr="0x6000d208">
   <sample key="0x5" count="4"/>
   <sample key="0x200001f" count="2"/>
   <sample key="0x57" count="2"/>
@@ -7281,7 +7442,7 @@
   <sample key="0xa" count="1"/>
   <sample key="0x200000e" count="1"/>
  </function>
- <function name="strchr" addr="0x600141d0">
+ <function name="strchr" addr="0x60013488">
   <sample key="0x3d" count="2"/>
   <sample key="0x53" count="2"/>
   <sample key="0x200000e" count="2"/>
@@ -7294,7 +7455,7 @@
   <sample key="0x2000020" count="1"/>
   <sample key="0x2000021" count="1"/>
  </function>
- <function name="_Mbtowc" addr="0x600127b8">
+ <function name="_Mbtowc" addr="0x60011a70">
   <sample key="0x200001f" count="5"/>
   <sample key="0x52" count="2"/>
   <sample key="0x200001b" count="1"/>
@@ -7304,7 +7465,7 @@
   <sample key="0x100001e" count="1"/>
   <sample key="0x200000e" count="1"/>
  </function>
- <function name="sqrt" addr="0x6000e358">
+ <function name="sqrt" addr="0x6000d610">
   <sample key="0x2f" count="4"/>
   <sample key="0x5" count="2"/>
   <sample key="0x45" count="1"/>
@@ -7315,7 +7476,7 @@
   <sample key="0x200000e" count="1"/>
   <sample key="0x64" count="1"/>
  </function>
- <function name="_Unlockfilelock" addr="0x600108ac">
+ <function name="_Unlockfilelock" addr="0x6000fb64">
   <sample key="0x200000e" count="2"/>
   <sample key="0x24" count="1"/>
   <sample key="0x28" count="1"/>
@@ -7327,7 +7488,7 @@
   <sample key="0x52" count="1"/>
   <sample key="0x53" count="1"/>
  </function>
- <function name="__clibrary_init" addr="0x60011364">
+ <function name="__clibrary_init" addr="0x6001061c">
   <sample key="0x200001b" count="2"/>
   <sample key="0x52" count="2"/>
   <sample key="0x1000023" count="2"/>
@@ -7337,7 +7498,7 @@
   <sample key="0x100001e" count="1"/>
   <sample key="0x200000e" count="1"/>
  </function>
- <function name="__do_global_ctors_aux" addr="0x600140c0">
+ <function name="__do_global_ctors_aux" addr="0x60013378">
   <sample key="0x100001e" count="2"/>
   <sample key="0x52" count="2"/>
   <sample key="0x24" count="1"/>
@@ -7359,21 +7520,21 @@
   <sample key="0x92" count="1"/>
   <sample key="0x30" count="1"/>
  </function>
- <function name="div" addr="0x60013058">
+ <function name="div" addr="0x60012310">
   <sample key="0x2f" count="6"/>
   <sample key="0x5" count="2"/>
   <sample key="0xa" count="1"/>
   <sample key="0x200000e" count="1"/>
   <sample key="0x2a" count="1"/>
  </function>
- <function name="ldiv" addr="0x60012808">
+ <function name="ldiv" addr="0x60011ac0">
   <sample key="0x2f" count="6"/>
   <sample key="0x5" count="2"/>
   <sample key="0xa" count="1"/>
   <sample key="0x200000e" count="1"/>
   <sample key="0x2a" count="1"/>
  </function>
- <function name="prout" addr="0x6000e2d0">
+ <function name="prout" addr="0x6000d588">
   <sample key="0x200001f" count="2"/>
   <sample key="0x2f" count="2"/>
   <sample key="0x5" count="1"/>
@@ -7384,7 +7545,7 @@
   <sample key="0x200000e" count="1"/>
   <sample key="0x2a" count="1"/>
  </function>
- <function name="strrchr" addr="0x60014348">
+ <function name="strrchr" addr="0x60013600">
   <sample key="0x100001a" count="1"/>
   <sample key="0x48" count="1"/>
   <sample key="0xa" count="1"/>
@@ -7416,14 +7577,14 @@
   <sample key="0x8c" count="1"/>
   <sample key="0x30" count="1"/>
  </function>
- <function name="_xtos_return_from_exc" addr="0x600144bc">
+ <function name="_xtos_return_from_exc" addr="0x60013774">
   <sample key="0x100001e" count="6"/>
   <sample key="0x1" count="1"/>
   <sample key="0x76" count="1"/>
   <sample key="0x8f" count="1"/>
   <sample key="0x8c" count="1"/>
  </function>
- <function name="memchr" addr="0x600141b0">
+ <function name="memchr" addr="0x60013468">
   <sample key="0x100001a" count="2"/>
   <sample key="0x200000e" count="2"/>
   <sample key="0x3d" count="1"/>
@@ -7433,14 +7594,14 @@
   <sample key="0x56" count="1"/>
   <sample key="0x2000020" count="1"/>
  </function>
- <function name="pow" addr="0x6000c540">
+ <function name="pow" addr="0x6000b7f8">
   <sample key="0x200001f" count="6"/>
   <sample key="0x5" count="1"/>
   <sample key="0xa" count="1"/>
   <sample key="0x2000020" count="1"/>
   <sample key="0x200000e" count="1"/>
  </function>
- <function name="remove" addr="0x6000e338">
+ <function name="remove" addr="0x6000d5f0">
   <sample key="0x5" count="2"/>
   <sample key="0x2f" count="2"/>
   <sample key="0x200000e" count="2"/>
@@ -7449,7 +7610,7 @@
   <sample key="0x200001f" count="1"/>
   <sample key="0x2000020" count="1"/>
  </function>
- <function name="set_constraint_handler_s" addr="0x60011248">
+ <function name="set_constraint_handler_s" addr="0x60010500">
   <sample key="0x5" count="2"/>
   <sample key="0x57" count="2"/>
   <sample key="0xa" count="1"/>
@@ -7459,14 +7620,14 @@
   <sample key="0xd" count="1"/>
   <sample key="0x62" count="1"/>
  </function>
- <function name="_Stod" addr="0x6000fef4">
+ <function name="_Stod" addr="0x6000f1ac">
   <sample key="0x200001f" count="5"/>
   <sample key="0x5" count="1"/>
   <sample key="0xa" count="1"/>
   <sample key="0x2000020" count="1"/>
   <sample key="0x200000e" count="1"/>
  </function>
- <function name="_Unlocksyslock" addr="0x600108fc">
+ <function name="_Unlocksyslock" addr="0x6000fbb4">
   <sample key="0x200000e" count="2"/>
   <sample key="0x24" count="1"/>
   <sample key="0x28" count="1"/>
@@ -7476,16 +7637,7 @@
   <sample key="0x100001e" count="1"/>
   <sample key="0x52" count="1"/>
  </function>
- <function name="_UserExceptionVector_text_start" addr="0x600001bc">
-  <sample key="0x1000023" count="3"/>
-  <sample key="0x24" count="1"/>
-  <sample key="0x28" count="1"/>
-  <sample key="0x4e" count="1"/>
-  <sample key="0x100001e" count="1"/>
-  <sample key="0x52" count="1"/>
-  <sample key="0xa3" count="1"/>
- </function>
- <function name="_Vacopy" addr="0x60010930">
+ <function name="_Vacopy" addr="0x6000fbe8">
   <sample key="0x1000023" count="3"/>
   <sample key="0x24" count="1"/>
   <sample key="0x5" count="1"/>
@@ -7494,7 +7646,7 @@
   <sample key="0x2f" count="1"/>
   <sample key="0x200000e" count="1"/>
  </function>
- <function name="_init" addr="0x60001930">
+ <function name="_init" addr="0x6000192c">
   <sample key="0x8" count="2"/>
   <sample key="0x52" count="2"/>
   <sample key="0x2000021" count="2"/>
@@ -7502,7 +7654,16 @@
   <sample key="0xa" count="1"/>
   <sample key="0x200000e" count="1"/>
  </function>
- <function name="abort_handler_s" addr="0x60011268">
+ <function name="_memmap_seg_sram3_start" addr="0x600001bc">
+  <sample key="0x1000023" count="3"/>
+  <sample key="0x24" count="1"/>
+  <sample key="0x28" count="1"/>
+  <sample key="0x4e" count="1"/>
+  <sample key="0x100001e" count="1"/>
+  <sample key="0x52" count="1"/>
+  <sample key="0xa3" count="1"/>
+ </function>
+ <function name="abort_handler_s" addr="0x60010520">
   <sample key="0x5" count="3"/>
   <sample key="0x200001f" count="2"/>
   <sample key="0xa" count="1"/>
@@ -7518,7 +7679,7 @@
   <sample key="0x2000020" count="1"/>
   <sample key="0x200000e" count="1"/>
  </function>
- <function name="open" addr="0x600127ec">
+ <function name="open" addr="0x60011aa4">
   <sample key="0x2f" count="3"/>
   <sample key="0x5" count="1"/>
   <sample key="0xa" count="1"/>
@@ -7527,7 +7688,7 @@
   <sample key="0x200001f" count="1"/>
   <sample key="0x200000e" count="1"/>
  </function>
- <function name="read" addr="0x600112e8">
+ <function name="read" addr="0x600105a0">
   <sample key="0x2f" count="3"/>
   <sample key="0x5" count="1"/>
   <sample key="0xa" count="1"/>
@@ -7536,7 +7697,7 @@
   <sample key="0x200001f" count="1"/>
   <sample key="0x200000e" count="1"/>
  </function>
- <function name="write" addr="0x60011338">
+ <function name="write" addr="0x600105f0">
   <sample key="0x2f" count="3"/>
   <sample key="0x5" count="1"/>
   <sample key="0xa" count="1"/>
@@ -7545,7 +7706,7 @@
   <sample key="0x200001f" count="1"/>
   <sample key="0x200000e" count="1"/>
  </function>
- <function name="_Getmbcurmax" addr="0x6000fd18">
+ <function name="_Getmbcurmax" addr="0x6000efd0">
   <sample key="0x52" count="2"/>
   <sample key="0x200001b" count="1"/>
   <sample key="0x8" count="1"/>
@@ -7554,7 +7715,7 @@
   <sample key="0x53" count="1"/>
   <sample key="0x200000e" count="1"/>
  </function>
- <function name="_Getpctype" addr="0x60011788">
+ <function name="_Getpctype" addr="0x60010a40">
   <sample key="0x100001e" count="2"/>
   <sample key="0x52" count="2"/>
   <sample key="0x200001b" count="1"/>
@@ -7562,7 +7723,7 @@
   <sample key="0xa" count="1"/>
   <sample key="0x200000e" count="1"/>
  </function>
- <function name="_Getptolower" addr="0x60010918">
+ <function name="_Getptolower" addr="0x6000fbd0">
   <sample key="0x100001e" count="2"/>
   <sample key="0x52" count="2"/>
   <sample key="0x200001b" count="1"/>
@@ -7570,14 +7731,14 @@
   <sample key="0xa" count="1"/>
   <sample key="0x200000e" count="1"/>
  </function>
- <function name="_Stoul" addr="0x60010550">
+ <function name="_Stoul" addr="0x6000f808">
   <sample key="0x200001f" count="4"/>
   <sample key="0x5" count="1"/>
   <sample key="0xa" count="1"/>
   <sample key="0x2000020" count="1"/>
   <sample key="0x200000e" count="1"/>
  </function>
- <function name="_close_r" addr="0x60014430">
+ <function name="_close_r" addr="0x600136e8">
   <sample key="0x200000e" count="2"/>
   <sample key="0x200001b" count="1"/>
   <sample key="0xa" count="1"/>
@@ -7586,7 +7747,7 @@
   <sample key="0x1000023" count="1"/>
   <sample key="0x60" count="1"/>
  </function>
- <function name="_closeallreg" addr="0x6000dd20">
+ <function name="_closeallreg" addr="0x6000cfd8">
   <sample key="0x5" count="3"/>
   <sample key="0xa" count="1"/>
   <sample key="0x52" count="1"/>
@@ -7594,7 +7755,7 @@
   <sample key="0x2000020" count="1"/>
   <sample key="0x200000e" count="1"/>
  </function>
- <function name="_init_reent_bss" addr="0x600113e8">
+ <function name="_init_reent_bss" addr="0x600106a0">
   <sample key="0x52" count="2"/>
   <sample key="0x62" count="2"/>
   <sample key="0xa" count="1"/>
@@ -7602,7 +7763,7 @@
   <sample key="0x200000e" count="1"/>
   <sample key="0x1000023" count="1"/>
  </function>
- <function name="_open_r" addr="0x60014448">
+ <function name="_open_r" addr="0x60013700">
   <sample key="0x200000e" count="2"/>
   <sample key="0x200001b" count="1"/>
   <sample key="0xa" count="1"/>
@@ -7611,7 +7772,7 @@
   <sample key="0x1000023" count="1"/>
   <sample key="0x60" count="1"/>
  </function>
- <function name="_read_r" addr="0x60014460">
+ <function name="_read_r" addr="0x60013718">
   <sample key="0x200000e" count="2"/>
   <sample key="0x200001b" count="1"/>
   <sample key="0xa" count="1"/>
@@ -7620,7 +7781,7 @@
   <sample key="0x1000023" count="1"/>
   <sample key="0x60" count="1"/>
  </function>
- <function name="_unlink_r" addr="0x60014478">
+ <function name="_unlink_r" addr="0x60013730">
   <sample key="0x200000e" count="2"/>
   <sample key="0x200001b" count="1"/>
   <sample key="0xa" count="1"/>
@@ -7629,7 +7790,7 @@
   <sample key="0x1000023" count="1"/>
   <sample key="0x60" count="1"/>
  </function>
- <function name="_write_r" addr="0x60014490">
+ <function name="_write_r" addr="0x60013748">
   <sample key="0x200000e" count="2"/>
   <sample key="0x200001b" count="1"/>
   <sample key="0xa" count="1"/>
@@ -7638,7 +7799,7 @@
   <sample key="0x1000023" count="1"/>
   <sample key="0x60" count="1"/>
  </function>
- <function name="tan" addr="0x6000c558">
+ <function name="tan" addr="0x6000b810">
   <sample key="0x2f" count="3"/>
   <sample key="0x5" count="1"/>
   <sample key="0xa" count="1"/>
@@ -7646,7 +7807,7 @@
   <sample key="0x57" count="1"/>
   <sample key="0x200000e" count="1"/>
  </function>
- <function name="xthal_dcache_all_writeback" addr="0x600144d8">
+ <function name="xthal_dcache_all_writeback" addr="0x60013790">
   <sample key="0xf5" count="2"/>
   <sample key="0x57" count="2"/>
   <sample key="0x25" count="1"/>
@@ -7654,14 +7815,14 @@
   <sample key="0x54" count="1"/>
   <sample key="0x200000e" count="1"/>
  </function>
- <function name="_Dscale" addr="0x6000e508">
+ <function name="_Dscale" addr="0x6000d7c0">
   <sample key="0x200001f" count="3"/>
   <sample key="0x5" count="1"/>
   <sample key="0xa" count="1"/>
   <sample key="0x2000020" count="1"/>
   <sample key="0x200000e" count="1"/>
  </function>
- <function name="_Getpmbstate" addr="0x6000fd30">
+ <function name="_Getpmbstate" addr="0x6000efe8">
   <sample key="0x52" count="2"/>
   <sample key="0x200001b" count="1"/>
   <sample key="0x8" count="1"/>
@@ -7669,7 +7830,7 @@
   <sample key="0x100001e" count="1"/>
   <sample key="0x200000e" count="1"/>
  </function>
- <function name="_Getpwcstate" addr="0x600127d8">
+ <function name="_Getpwcstate" addr="0x60011a90">
   <sample key="0x52" count="2"/>
   <sample key="0x200001b" count="1"/>
   <sample key="0x8" count="1"/>
@@ -7677,20 +7838,20 @@
   <sample key="0x100001e" count="1"/>
   <sample key="0x200000e" count="1"/>
  </function>
- <function name="_LDscale" addr="0x60013030">
+ <function name="_LDscale" addr="0x600122e8">
   <sample key="0x200001f" count="3"/>
   <sample key="0x5" count="1"/>
   <sample key="0xa" count="1"/>
   <sample key="0x2000020" count="1"/>
   <sample key="0x200000e" count="1"/>
  </function>
- <function name="_LDscalex" addr="0x60013040">
+ <function name="_LDscalex" addr="0x600122f8">
   <sample key="0x2f" count="4"/>
   <sample key="0x5" count="1"/>
   <sample key="0xa" count="1"/>
   <sample key="0x200000e" count="1"/>
  </function>
- <function name="_exit" addr="0x60013078">
+ <function name="_exit" addr="0x60012330">
   <sample key="0x5" count="1"/>
   <sample key="0xa" count="1"/>
   <sample key="0x72" count="1"/>
@@ -7699,7 +7860,7 @@
   <sample key="0xd" count="1"/>
   <sample key="0x60" count="1"/>
  </function>
- <function name="close" addr="0x600112d4">
+ <function name="close" addr="0x6001058c">
   <sample key="0x2f" count="2"/>
   <sample key="0x5" count="1"/>
   <sample key="0xa" count="1"/>
@@ -7707,7 +7868,7 @@
   <sample key="0x52" count="1"/>
   <sample key="0x200000e" count="1"/>
  </function>
- <function name="execl" addr="0x60011350">
+ <function name="execl" addr="0x60010608">
   <sample key="0xa" count="1"/>
   <sample key="0x100001e" count="1"/>
   <sample key="0x52" count="1"/>
@@ -7716,7 +7877,7 @@
   <sample key="0x200000e" count="1"/>
   <sample key="0x1000023" count="1"/>
  </function>
- <function name="localeconv" addr="0x60011708">
+ <function name="localeconv" addr="0x600109c0">
   <sample key="0x52" count="2"/>
   <sample key="0x200001b" count="1"/>
   <sample key="0x8" count="1"/>
@@ -7724,7 +7885,7 @@
   <sample key="0x100001e" count="1"/>
   <sample key="0x200000e" count="1"/>
  </function>
- <function name="rmdir" addr="0x60011300">
+ <function name="rmdir" addr="0x600105b8">
   <sample key="0x2000020" count="2"/>
   <sample key="0xa" count="1"/>
   <sample key="0x100001e" count="1"/>
@@ -7732,7 +7893,7 @@
   <sample key="0x200000e" count="1"/>
   <sample key="0x1000023" count="1"/>
  </function>
- <function name="sbrk" addr="0x60011310">
+ <function name="sbrk" addr="0x600105c8">
   <sample key="0x2f" count="2"/>
   <sample key="0x5" count="1"/>
   <sample key="0xa" count="1"/>
@@ -7740,7 +7901,7 @@
   <sample key="0x52" count="1"/>
   <sample key="0x200000e" count="1"/>
  </function>
- <function name="unlink" addr="0x60011324">
+ <function name="unlink" addr="0x600105dc">
   <sample key="0x2f" count="2"/>
   <sample key="0x5" count="1"/>
   <sample key="0xa" count="1"/>
@@ -7748,26 +7909,26 @@
   <sample key="0x52" count="1"/>
   <sample key="0x200000e" count="1"/>
  </function>
- <function name="_LDint" addr="0x60013018">
+ <function name="_LDint" addr="0x600122d0">
   <sample key="0x2f" count="3"/>
   <sample key="0x5" count="1"/>
   <sample key="0xa" count="1"/>
   <sample key="0x200000e" count="1"/>
  </function>
- <function name="_LDunscale" addr="0x600120e8">
+ <function name="_LDunscale" addr="0x600113a0">
   <sample key="0x2f" count="3"/>
   <sample key="0x5" count="1"/>
   <sample key="0xa" count="1"/>
   <sample key="0x200000e" count="1"/>
  </function>
- <function name="_LXp_movx" addr="0x60012418">
+ <function name="_LXp_movx" addr="0x600116d0">
   <sample key="0x2f" count="2"/>
   <sample key="0x5" count="1"/>
   <sample key="0xa" count="1"/>
   <sample key="0xd" count="1"/>
   <sample key="0x6e" count="1"/>
  </function>
- <function name="_LDtest" addr="0x60011ab8">
+ <function name="_LDtest" addr="0x60010d70">
   <sample key="0x2f" count="2"/>
   <sample key="0x5" count="1"/>
   <sample key="0xa" count="1"/>
@@ -7777,7 +7938,7 @@
   <sample key="0x11" count="4"/>
   <sample key="0x10" count="1"/>
  </function>
- <function name="_fini" addr="0x600146ac">
+ <function name="_fini" addr="0x60013964">
   <sample key="0x8" count="1"/>
   <sample key="0xa" count="1"/>
   <sample key="0x52" count="1"/>
@@ -7788,34 +7949,34 @@
   <sample key="0x12" count="4"/>
   <sample key="0xf" count="1"/>
  </function>
- <function name="abort" addr="0x60011468">
+ <function name="abort" addr="0x60010720">
   <sample key="0x5" count="2"/>
   <sample key="0x2000020" count="2"/>
   <sample key="0xa" count="1"/>
  </function>
- <function name="xtos_cause3_handler" addr="0x600144a4">
+ <function name="xtos_unhandled_exception" addr="0x6001375c">
   <sample key="0x100001e" count="2"/>
   <sample key="0x24" count="1"/>
   <sample key="0xb4" count="1"/>
   <sample key="0x1" count="1"/>
  </function>
- <function name="__floatunsidf" addr="0x6001416c">
+ <function name="__floatunsidf" addr="0x60013424">
   <sample key="0x200001b" count="1"/>
   <sample key="0xa" count="1"/>
   <sample key="0x4d" count="1"/>
   <sample key="0x2000020" count="1"/>
  </function>
- <function name="_Exit" addr="0x60011a50">
+ <function name="_Exit" addr="0x60010d08">
   <sample key="0x5" count="1"/>
   <sample key="0xa" count="1"/>
   <sample key="0x200001f" count="1"/>
  </function>
- <function name="_LPmsw" addr="0x60011ad0">
+ <function name="_LPmsw" addr="0x60010d88">
   <sample key="0x100001a" count="1"/>
   <sample key="0xa" count="1"/>
   <sample key="0x200000e" count="1"/>
  </function>
- <function name="_Pmsw" addr="0x6000e86c">
+ <function name="_Pmsw" addr="0x6000db24">
   <sample key="0x100001a" count="1"/>
   <sample key="0xa" count="1"/>
   <sample key="0x200000e" count="1"/>
@@ -7825,62 +7986,62 @@
   <sample key="0x60" count="1"/>
   <sample key="0x98" count="1"/>
  </function>
- <function name="fork" addr="0x600141f4">
+ <function name="fork" addr="0x600134ac">
   <sample key="0xa" count="1"/>
   <sample key="0x2000020" count="1"/>
   <sample key="0x200000e" count="1"/>
  </function>
- <function name="wait" addr="0x600141fc">
+ <function name="wait" addr="0x600134b4">
   <sample key="0xa" count="1"/>
   <sample key="0x2000020" count="1"/>
   <sample key="0x200000e" count="1"/>
  </function>
- <function name="xtos_unhandled_interrupt" addr="0x600144b4">
+ <function name="xtos_unhandled_interrupt" addr="0x6001376c">
   <sample key="0xb4" count="1"/>
   <sample key="0xa" count="1"/>
   <sample key="0x200000e" count="1"/>
  </function>
- <function name="_Closreg" addr="0x6001433c">
+ <function name="_Closreg" addr="0x600135f4">
   <sample key="0xa" count="1"/>
   <sample key="0x200000e" count="1"/>
  </function>
- <function name="_LPlsw" addr="0x60011ac8">
-  <sample key="0xa" count="1"/>
-  <sample key="0x200000e" count="1"/>
- </function>
- <function name="_Mtxdst" addr="0x60014370">
-  <sample key="0xa" count="1"/>
-  <sample key="0x200000e" count="1"/>
- </function>
- <function name="_Mtxinit" addr="0x60014368">
-  <sample key="0xa" count="1"/>
-  <sample key="0x200000e" count="1"/>
- </function>
- <function name="_Mtxlock" addr="0x60014378">
-  <sample key="0xa" count="1"/>
-  <sample key="0x200000e" count="1"/>
- </function>
- <function name="_Mtxunlock" addr="0x60014380">
-  <sample key="0xa" count="1"/>
-  <sample key="0x200000e" count="1"/>
- </function>
- <function name="_Plsw" addr="0x6000e864">
-  <sample key="0xa" count="1"/>
-  <sample key="0x200000e" count="1"/>
- </function>
- <function name="_memmap_seg_sram1_max" addr="0x6000019c">
+ <function name="_DoubleExceptionVector" addr="0x600001dc">
   <sample key="0xb4" count="1"/>
   <sample key="0x4d" count="1"/>
  </function>
- <function name="_memmap_seg_sram4_start" addr="0x600001dc">
-  <sample key="0xb4" count="1"/>
-  <sample key="0x4d" count="1"/>
- </function>
- <function name="ignore_handler_s" addr="0x60011280">
+ <function name="_LPlsw" addr="0x60010d80">
   <sample key="0xa" count="1"/>
   <sample key="0x200000e" count="1"/>
  </function>
- <function name="_memmap_mem_srom_start" addr="0x50000000">
+ <function name="_Mtxdst" addr="0x60013628">
+  <sample key="0xa" count="1"/>
+  <sample key="0x200000e" count="1"/>
+ </function>
+ <function name="_Mtxinit" addr="0x60013620">
+  <sample key="0xa" count="1"/>
+  <sample key="0x200000e" count="1"/>
+ </function>
+ <function name="_Mtxlock" addr="0x60013630">
+  <sample key="0xa" count="1"/>
+  <sample key="0x200000e" count="1"/>
+ </function>
+ <function name="_Mtxunlock" addr="0x60013638">
+  <sample key="0xa" count="1"/>
+  <sample key="0x200000e" count="1"/>
+ </function>
+ <function name="_Plsw" addr="0x6000db1c">
+  <sample key="0xa" count="1"/>
+  <sample key="0x200000e" count="1"/>
+ </function>
+ <function name="_memmap_seg_sram2_start" addr="0x6000019c">
+  <sample key="0xb4" count="1"/>
+  <sample key="0x4d" count="1"/>
+ </function>
+ <function name="ignore_handler_s" addr="0x60010538">
+  <sample key="0xa" count="1"/>
+  <sample key="0x200000e" count="1"/>
+ </function>
+ <function name="_memmap_seg_srom0_start" addr="0x50000000">
   <sample key="0x4d" count="1"/>
  </function>
 </isa_profile>

@@ -128,8 +128,7 @@ ALWAYS_INLINE F32x2 calcFadeGain(const CrossFadeCoeffs *coeffs, CrossFadeStates 
 	return states->prevGain;
 }
 
-//ALWAYS_INLINE
-F32x2 CrossFade_Process(const CrossFadeCoeffs *coeffs, CrossFadeStates *states,
+ALWAYS_INLINE F32x2 CrossFade_Process(const CrossFadeCoeffs *coeffs, CrossFadeStates *states,
 							  const F32x2 bypassSample, const F32x2 sample)
 {
 	F32x2 gain1   = calcFadeGain(coeffs, states);

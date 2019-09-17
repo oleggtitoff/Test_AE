@@ -102,6 +102,14 @@ int main(int argc, char *argv[])
 	fclose(configFilePtr);
 	fclose(inputFilePtr);
 	fclose(outputFilePtr);
+
+
+//	F32x2 x = doubleToF32x2Join(-0.5946 / 16, 0.793 / 16);
+//	F32x2 y = doubleToF32x2Join(0.0004116, -0);
+//	F32x2 res = F32x2Log2(x);
+//	double res1 = F32x2ToDoubleExtract_h(res) * 16;
+//	double res2 = F32x2ToDoubleExtract_l(res) * 16;
+
 	return 0;
 }
 
@@ -315,7 +323,7 @@ void run(FILE *inputFilePtr, FILE *outputFilePtr, Params *params, Coeffs *coeffs
 			sample = F32x2LeftShiftAS(sample, HEADROOM);
 
 			sample = CrossFade_Process(&coeffs->crossFadeCoeffs, &states->crossFadeStates,
-							  	  	   bypassSample, sample);
+									   bypassSample, sample);
 
 			dataBuff[i * CHANNELS] = F32x2ToI32Extract_h(sample);
 			dataBuff[i * CHANNELS + 1] = F32x2ToI32Extract_l(sample);
@@ -323,6 +331,6 @@ void run(FILE *inputFilePtr, FILE *outputFilePtr, Params *params, Coeffs *coeffs
 
 		fwrite(dataBuff, BYTES_PER_SAMPLE, samplesRead, outputFilePtr);
 
-		//cyclesCounter++;
+		cyclesCounter++;
 	}
 }
